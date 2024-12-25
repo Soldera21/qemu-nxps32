@@ -9,6 +9,7 @@
 #include "hw/qdev-properties-system.h"
 #include "qemu/log.h"
 #include "qemu/module.h"
+#include <stdio.h>
 
 #ifndef STM_UART_ERR_DEBUG
 #define STM_UART_ERR_DEBUG 0
@@ -122,6 +123,7 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
     S32K358UartState *s = opaque;
     uint32_t value = val64;
     unsigned char ch;
+    //fprintf(stderr, "Write UART addr:%ld with value:%d\n",addr,value);
 
     DB_PRINT("Write 0x%" PRIx32 ", 0x%"HWADDR_PRIx"\n", value, addr);
 
@@ -179,7 +181,7 @@ static const MemoryRegionOps s32k358_uart_ops = {
     .endianness = DEVICE_NATIVE_ENDIAN,
 };
 
-static const Property s32k358_uart_properties[] = {
+static Property s32k358_uart_properties[] = {
     DEFINE_PROP_CHR("chardev", S32K358UartState, chr),
     DEFINE_PROP_END_OF_LIST(),
 };
@@ -191,7 +193,7 @@ static void s32k358_uart_init(Object *obj)
     sysbus_init_irq(SYS_BUS_DEVICE(obj), &s->irq);
 
     memory_region_init_io(&s->mmio, obj, &s32k358_uart_ops, s,
-                          TYPE_S32K358_UART, 0x400);
+                          TYPE_S32K358_UART, 0x4000);
     sysbus_init_mmio(SYS_BUS_DEVICE(obj), &s->mmio);
 }
 

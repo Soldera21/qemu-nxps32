@@ -1,6 +1,6 @@
-/*
- * S32K358 UART
- */
+//
+// S32K358 UART
+//
 
 #ifndef HW_S32K358_UART_H
 #define HW_S32K358_UART_H

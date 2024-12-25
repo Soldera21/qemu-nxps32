@@ -12,6 +12,8 @@
 #include "hw/qdev-properties.h"
 #include "hw/qdev-clock.h"
 #include "sysemu/sysemu.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 static const uint32_t uart_addr[STM_NUM_UARTS] = { 0x40328000, 0x4032C000, 0x40330000, 0x40334000, 0x40338000, 0x4033C000, 0x40340000, 0x40344000, 0x4048C000, 0x40490000, 0x40494000, 0x40498000, 0x4049C000, 0x404A0000, 0x404A4000, 0x404A8000 };
 
@@ -82,7 +84,7 @@ static void s32k358_soc_realize(DeviceState *dev_soc, Error **errp)
 
     armv7m = DEVICE(&s->armv7m);
     qdev_prop_set_uint32(armv7m, "num-irq", 240);
-    qdev_prop_set_uint8(armv7m, "num-prio-bits", 4);
+    //qdev_prop_set_uint8(armv7m, "num-prio-bits", 4);
     qdev_prop_set_string(armv7m, "cpu-type", ARM_CPU_TYPE_NAME("cortex-m7"));
     qdev_prop_set_bit(armv7m, "enable-bitband", true);
     qdev_connect_clock_in(armv7m, "cpuclk", s->sysclk);
@@ -113,6 +115,7 @@ static void s32k358_soc_realize(DeviceState *dev_soc, Error **errp)
         sysbus_connect_irq(busdev, 0, qdev_get_gpio_in(armv7m, uart_irq[i]));
     }
 }
+
 
 static void s32k358_soc_class_init(ObjectClass *klass, void *data)
 {

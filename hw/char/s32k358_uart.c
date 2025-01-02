@@ -117,7 +117,7 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
     uint32_t value = val64;
     unsigned char ch;
 
-    //fprintf(stderr, "Write UART addr:%ld with value:%d\n",addr,value);
+    fprintf(stderr, "Write UART addr:%ld with value:%d\n",addr,value);
 
     DB_PRINT("Write 0x%" PRIx32 ", 0x%"HWADDR_PRIx"\n", value, addr);
 
@@ -126,8 +126,10 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
         if (value <= 0x3FF) {
             /* I/O being synchronous, TXE is always set. In addition, it may
                only be set by hardware, so keep it set here. */
+            fprintf(stderr, "Entered here\n");
             s->uart_stat = value | UART_STAT_TDRE;
         } else {
+            fprintf(stderr, "Second entered\n");
             s->uart_stat &= value;
         }
         s32k358_update_irq(s);
@@ -144,8 +146,6 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
                clear TC by writing 0 to the SR register, so set it again
                on each write. */
 
-
-            /// !!! WE need to change the status that check if the communciation is completed
             s->uart_stat |= UART_STAT_TC;
             s32k358_update_irq(s);
         }

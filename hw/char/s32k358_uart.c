@@ -4,6 +4,7 @@
 
 #include "qemu/osdep.h"
 #include "hw/char/s32k358_uart.h"
+#include "hw/char/s32k358_uart_mapping.h" // Map addresses of each register UART
 #include "hw/irq.h"
 #include "hw/qdev-properties.h"
 #include "hw/qdev-properties-system.h"
@@ -23,17 +24,6 @@
 
 #define DB_PRINT(fmt, args...) DB_PRINT_L(1, fmt, ## args)
 
-static int s32k358_uart_can_receive(void *opaque)
-{
-    S32K358UartState *s = opaque;
-
-    if (!(s->uart_stat & UART_STAT_RDRF)) {
-        return 1;
-    }
-
-    return 0;
-}
-
 static void s32k358_update_irq(S32K358UartState *s)
 {
     uint32_t mask = s->uart_stat & s->uart_ctrl;
@@ -45,13 +35,25 @@ static void s32k358_update_irq(S32K358UartState *s)
     }
 }
 
+
+static int s32k358_uart_can_receive(void *opaque)
+{
+    S32K358UartState *s = opaque;
+
+    if (!(s->uart_stat & UART_STAT_RDRF)) {
+        return 1;
+    }
+
+    return 0;
+}
+
 static void s32k358_uart_receive(void *opaque, const uint8_t *buf, int size)
 {
     S32K358UartState *s = opaque;
 
-    if (!(s->uart_ctrl & UART_CTRL_UE && s->uart_ctrl & UART_CTRL_RE)) {
-        /* UART not enabled - drop the chars */
-        DB_PRINT("Dropping the chars\n");
+    fprintf(stderr, "Called uart receive\n");
+    if (!(s->uart_ctrl & UART_CTRL_TE && s->uart_ctrl & UART_CTRL_RE)) {
+        fprintf(stderr, "Drop\n");
         return;
     }
 
@@ -69,10 +71,41 @@ static void s32k358_uart_reset(DeviceState *dev)
 {
     S32K358UartState *s = S32K358_UART(dev);
 
-    s->uart_data = 0x00001000;
-    s->uart_stat = 0x00C00000;
-    s->uart_ctrl = 0x00000000;
-    s->uart_baud = 0x0F000004;
+    s->uart_verid    = 0x04040007;
+    s->uart_param    = 0x00000404;
+    s->uart_global   = 0x00000000;
+    s->uart_pincfg   = 0x00000000;
+
+    s->uart_baud     = 0x0F000004;
+    s->uart_stat     = 0x00C00000;
+    s->uart_ctrl     = 0x00000000;
+    s->uart_data     = 0x00001000;
+
+    s->uart_match    = 0x00000000;
+    s->uart_modir    = 0x00000000;
+    s->uart_fifo     = 0x00C00033;
+    s->uart_water    = 0x00000000;
+    s->uart_dataro   = 0x00001000;
+    s->uart_mcr      = 0x00000000;
+    s->uart_msr      = 0x00000000;
+    s->uart_reir     = 0x00000000;
+    s->uart_teir     = 0x00000000;
+    s->uart_hdcr     = 0x00000000;
+    s->uart_tocr     = 0x00000000;
+    s->uart_tosr     = 0x0000000F;
+
+    s->uart_timeout0 = 0x00000000;
+    s->uart_timeout1 = 0x00000000;
+    s->uart_timeout2 = 0x00000000;
+    s->uart_timeout3 = 0x00000000;
+
+    for (int i = 0; i < 128; i++) {
+        s->uart_tcbr[i] = 0x00000000;
+    }
+
+    for (int i = 0; i < 192; i++) {
+        s->uart_tdbr[i] = 0x00000000;
+    }
 
     s32k358_update_irq(s);
 }
@@ -116,46 +149,25 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
     S32K358UartState *s = opaque;
     uint32_t value = val64;
     unsigned char ch;
+    //unsigned int parity;
 
     fprintf(stderr, "Write UART addr:%ld with value:%d\n",addr,value);
 
-    DB_PRINT("Write 0x%" PRIx32 ", 0x%"HWADDR_PRIx"\n", value, addr);
-
     switch (addr) {
     case UART_STAT:
-        if (value <= 0x3FF) {
-            /* I/O being synchronous, TXE is always set. In addition, it may
-               only be set by hardware, so keep it set here. */
-            fprintf(stderr, "Entered here\n");
-            s->uart_stat = value | UART_STAT_TDRE;
-        } else {
-            fprintf(stderr, "Second entered\n");
-            s->uart_stat &= value;
-        }
-        s32k358_update_irq(s);
+        s->uart_stat = value;
         return;
     case UART_DATA:
-        if (value < 0xF000) {
-            ch = value;
-            /* XXX this blocks entire thread. Rewrite to use
-             * qemu_chr_fe_write and background I/O callbacks */
-            qemu_chr_fe_write_all(&s->chr, &ch, 1);
-            /* XXX I/O are currently synchronous, making it impossible for
-               software to observe transient states where TXE or TC aren't
-               set. Unlike TXE however, which is read-only, software may
-               clear TC by writing 0 to the SR register, so set it again
-               on each write. */
-
-            s->uart_stat |= UART_STAT_TC;
-            s32k358_update_irq(s);
-        }
+        //parity= value & (1 << 14);
+        ch = value & 0xFF; // We take the first 8bits of the data register
+        qemu_chr_fe_write_all(&s->chr, &ch, 1);
+        s->uart_stat |= UART_STAT_TC;
         return;
     case UART_BAUD:
         s->uart_baud = value;
         return;
     case UART_CTRL:
-        s->uart_ctrl = value;
-        s32k358_update_irq(s);
+        s->uart_ctrl |= value;
         return;
     default:
         qemu_log_mask(LOG_GUEST_ERROR,
@@ -179,9 +191,8 @@ static void s32k358_uart_init(Object *obj)
     S32K358UartState *s = S32K358_UART(obj);
 
     sysbus_init_irq(SYS_BUS_DEVICE(obj), &s->irq);
-
     memory_region_init_io(&s->mmio, obj, &s32k358_uart_ops, s,
-                          TYPE_S32K358_UART, 0x400);
+                          TYPE_S32K358_UART, 0x4000);
     sysbus_init_mmio(SYS_BUS_DEVICE(obj), &s->mmio);
 }
 
@@ -199,8 +210,8 @@ static void s32k358_uart_class_init(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
 
     dc->reset = s32k358_uart_reset;
-    device_class_set_props(dc, s32k358_uart_properties);
     dc->realize = s32k358_uart_realize;
+    device_class_set_props(dc, s32k358_uart_properties);
 }
 
 static const TypeInfo s32k358_uart_info = {

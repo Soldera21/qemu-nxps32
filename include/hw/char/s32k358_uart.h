@@ -9,25 +9,13 @@
 #include "chardev/char-fe.h"
 #include "qom/object.h"
 
-#define UART_BAUD 0x10
-#define UART_STAT 0x14
-#define UART_CTRL 0x18
-#define UART_DATA 0x1C
-
-
-#define UART_STAT_RAF       (1 << 24) // Receiver Active Flag
-#define UART_STAT_TDRE      (1 << 23) // Indicate that the register of transmission is empty. (we can transmit again)
-#define UART_STAT_TC        (1 << 22) // Transmission Complete Flag
-#define UART_STAT_RDRF      (1 << 21) // Receive Data Register Full Flag
-
-#define UART_CTRL_UE        (1 << 13) // UART enabled
-#define UART_CTRL_RE        (1 << 18) // Receiver Enable
-
 
 #define TYPE_S32K358_UART "s32k358-uart"
-OBJECT_DECLARE_SIMPLE_TYPE(S32K358UartState, S32K358_UART)
 
-struct S32K358UartState {
+#define S32K358_UART(obj) \
+    OBJECT_CHECK(S32K358UartState, (obj), TYPE_S32K358_UART)
+
+typedef struct {
     /* <private> */
     SysBusDevice parent_obj;
 
@@ -35,12 +23,38 @@ struct S32K358UartState {
     MemoryRegion mmio;
 
     /* NEW UART*/
-    uint32_t uart_stat;
-    uint32_t uart_data;
-    uint32_t uart_ctrl;
+    uint32_t uart_verid;
+    uint32_t uart_param;
+    uint32_t uart_global;
+    uint32_t uart_pincfg;
+
     uint32_t uart_baud;
+    uint32_t uart_stat;
+    uint32_t uart_ctrl;
+    uint32_t uart_data;
+
+    uint32_t uart_match;
+    uint32_t uart_modir;
+    uint32_t uart_fifo;
+    uint32_t uart_water;
+    uint32_t uart_dataro;
+    uint32_t uart_mcr;
+    uint32_t uart_msr;
+    uint32_t uart_reir;
+    uint32_t uart_teir;
+    uint32_t uart_hdcr;
+    uint32_t uart_tocr;
+    uint32_t uart_tosr;
+
+    uint32_t uart_timeout0;
+    uint32_t uart_timeout1;
+    uint32_t uart_timeout2;
+    uint32_t uart_timeout3;
+
+    uint32_t uart_tcbr[128];
+    uint32_t uart_tdbr[192];
 
     CharBackend chr;
     qemu_irq irq;
-};
+} S32K358UartState;
 #endif /* HW_S32K358_UART_H */

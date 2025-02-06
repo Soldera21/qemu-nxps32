@@ -7,6 +7,7 @@
 
 #include "hw/misc/s32k358_syscfg.h"
 #include "hw/char/s32k358_uart.h"
+#include "hw/net/s32k358_can.h"
 #include "hw/or-irq.h"
 #include "hw/arm/armv7m.h"
 #include "hw/clock.h"
@@ -21,6 +22,7 @@ OBJECT_DECLARE_SIMPLE_TYPE(S32K358State, S32K358_SOC)
 #define FLASH_SIZE (8192 * 1024)
 #define SRAM_BASE_ADDRESS 0x20400000
 #define SRAM_SIZE (768 * 1024)
+#define CAN0_ORed_IRQn 0x000001F4
 
 struct S32K358State {
     SysBusDevice parent_obj;
@@ -29,6 +31,7 @@ struct S32K358State {
 
     S32K358SyscfgState syscfg;
     S32K358UartState uart[STM_NUM_UARTS];
+    S32K358CanState can;
 
     OrIRQState *adc_irqs;
 

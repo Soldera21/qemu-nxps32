@@ -22,6 +22,8 @@
 #define ET_OFFSET             0x78   // ET Register Offset
 #define FLTCONF_IE_OFFSET     0x7C   // FLTCONF_IE Register Offset
 
+#define CAN_DATA              0x80   // Message buffer. Address available until offset 0x670
+
 #define RXIMR_BASE_OFFSET     0x880  // RXIMR Base Offset
 #define MECR_BASE_OFFSET      0xAE0  // MECR Base Offset
 #define ERRIAR_BASE_OFFSET    0xAE4  // ERRIAR Base Offset
@@ -51,6 +53,12 @@
 #define ERFFEL_BASE_ADDR      0x3000 // ERFFEL Base Address (Enhanced Error Frame Extension Logic)
 
 
+//Frame information related to "CAN_DATA"
+#define CAN_FRAME_DLC_MASK     (0xF << 16)
+#define CAN_FRAME_ID_MASK      (0x1FF << 50)
+#define CAN_FRAME_DATA_SHIFT   (64)
+
+
 
 // MCR Register Bit Definitions
 #define CAN_MCR_MDIS           (1 << 31)  // Module Disable
@@ -75,9 +83,13 @@
 #define CAN_MCR_MAXMB_MASK     (0x7F << 0) // Max Message Buffers [6:0]
 
 // CTRL1 Register Bit Definitions
-#define CAN_CTRL1_PRESDIV_MASK  (0xFF << 24)  // Prescaler Division Factor
+#define CAN_CTRL1_PRESDIV_SHIFT  (24)  // Prescaler Division Factor
+#define CAN_CTRL1_PRESDIV_MASK  (0xFF << 24)
+#define CAN_CTRL1_RJW_SHIFT     (22)
 #define CAN_CTRL1_RJW_MASK      (0x3 << 22)   // Resync Jump Width
+#define CAN_CTRL1_PSEG1_SHIFT   (19)
 #define CAN_CTRL1_PSEG1_MASK    (0x7 << 19)   // Phase Segment 1
+#define CAN_CTRL1_PSEG2_SHIFT   (16)
 #define CAN_CTRL1_PSEG2_MASK    (0x7 << 16)   // Phase Segment 2
 #define CAN_CTRL1_BOFFMSK       (1 << 15)     // Bus Off Interrupt Mask
 #define CAN_CTRL1_ERRMSK        (1 << 14)     // Error Interrupt Mask
@@ -90,8 +102,8 @@
 #define CAN_CTRL1_TSYN          (1 << 5)      // Timer Sync
 #define CAN_CTRL1_LBUF          (1 << 4)      // Lowest Buffer Transmitted First
 #define CAN_CTRL1_LOM           (1 << 3)      // Listen-Only Mode
+#define CAN_CTRL1_PROPSEG_SHIFT (0)
 #define CAN_CTRL1_PROPSEG_MASK  (0x7 << 0)    // Propagation Segment [2:0]
-
 
 // TIMER Register Bit Definitions
 // Timer Value

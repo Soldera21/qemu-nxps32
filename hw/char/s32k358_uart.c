@@ -16,6 +16,8 @@
 #define STM_UART_ERR_DEBUG 0
 #endif
 
+#define CAN_ID    0x100 // ID del messaggio CAN
+
 #define DB_PRINT_L(lvl, fmt, args...) do { \
     if (STM_UART_ERR_DEBUG >= lvl) { \
         qemu_log("%s: " fmt, __func__, ## args); \
@@ -66,6 +68,21 @@ static void s32k358_uart_receive(void *opaque, const uint8_t *buf, int size)
     DB_PRINT("Receiving: %c\n", s->uart_data);
     //DB_PRINT("Receiving: %c\n", s->uart_dr);
 }
+
+/*
+static void uart_receive_can_command(void *opaque, void *canPointer) {
+
+    S32K358CanState *c= canPointer;
+    S32K358UartState *s = opaque;
+
+    if (s->uart_stat & UART_STAT_RDRF) {
+        uint8_t cmd = s->uart_data;
+        uint8_t data[2] = {cmd, cmd + 1};
+        flexcan_send(c,CAN_ID, data, 2);
+        fprintf(stderr, "Called CAN\n");
+    }
+}
+*/
 
 static void s32k358_uart_reset(DeviceState *dev)
 {
@@ -151,7 +168,7 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
     unsigned char ch;
     //unsigned int parity;
 
-    fprintf(stderr, "Write UART addr:%ld with value:%d\n",addr,value);
+    //fprintf(stderr, "Write UART addr:%ld with value:%d\n",addr,value);
 
     switch (addr) {
     case UART_STAT:

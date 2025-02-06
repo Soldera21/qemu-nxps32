@@ -436,6 +436,7 @@ config S32K358_SOC
     select ARM_V7M
     select OR_IRQ
     select S32K358_UART
+    select S32K358_CAN
     select S32K358_SYSCFG
 
 config STM32F100_SOC

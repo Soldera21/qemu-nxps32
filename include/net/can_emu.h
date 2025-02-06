@@ -114,6 +114,8 @@ int can_bus_insert_client(CanBusState *bus, CanBusClientState *client);
 
 int can_bus_remove_client(CanBusClientState *client);
 
+CanBusState *can_bus_find_by_name(const char *name, bool create_missing);
+
 ssize_t can_bus_client_send(CanBusClientState *,
                             const struct qemu_can_frame *frames,
                             size_t frames_cnt);

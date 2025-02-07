@@ -1,0 +1,2110 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                              ./FreeRTOS/Source/queue.o (memcpy)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                              ./FreeRTOS/Source/stream_buffer.o (memset)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+                              ./FreeRTOS/Source/tasks.o (snprintf)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+                              ./FreeRTOS/Source/tasks.o (strcpy)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
+                              ./FreeRTOS/Source/tasks.o (strlen)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o) (_impure_ptr)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o) (_svfprintf_r)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o) (_printf_i)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memchr.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o) (memchr)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o) (memmove)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o) (_free_r)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o) (_malloc_r)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o) (_realloc_r)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o) (errno)
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+                              c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o) (_sbrk)
+
+Discarded input sections
+
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/croutine.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/event_groups.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x18 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x5c ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x10e ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x86 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x43 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x57 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x10 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x356 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/list.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/list.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x18 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x5c ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x10e ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x86 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x43 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x57 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x10 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x356 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/queue.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x18 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x5c ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x16d ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x43 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x57 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x10 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x356 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/stream_buffer.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x18 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x5c ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x10e ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x86 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x43 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x57 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x10 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x356 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00000000       0x98 ./FreeRTOS/Source/tasks.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x18 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x5c ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x10e ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x86 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x43 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x57 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x10 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x356 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000       0x80 ./FreeRTOS/Source/timers.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x16d ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x56 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x51 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0xa90 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x18 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x5c ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x35 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x10e ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x86 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x43 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x57 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x34 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x10 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x52 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x356 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x22 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x103 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x6a ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x1df ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x16 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x1c6 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x1c ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x182 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x1d7 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x2e ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x1f ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x12 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000     0x1033 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0xc3 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x14f ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x22 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x56 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x51 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0x103 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0x1df ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0x16d ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x1c ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0x182 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0x1d7 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x2e ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x1f ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0x12 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000     0x1033 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000       0xc3 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000000      0x14f ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x88 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x97b ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0xcc ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x6e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x4c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x94 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0xc8 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x11e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x52 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x22 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x56 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x51 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x103 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x1df ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x7c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x130 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000     0x1517 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x83 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x16d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x1c6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x1c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x182 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x1d7 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x2e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x1f ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x12 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000     0x1033 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0xc3 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x14f ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x5f ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x57 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x88 ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000      0x97b ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0xcc ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x6e ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x88 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x97b ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0xcc ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x6e ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x4c ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x94 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0xc8 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x11e ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x52 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x22 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x56 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x51 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x103 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x1df ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x7c ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x130 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000     0x1517 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x83 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x16d ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x1c6 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x1c ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x182 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x1d7 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x2e ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x1f ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x12 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000     0x1033 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0xc3 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x14f ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x5f ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x57 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0xcd9 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x392 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .debug_macro   0x00000000      0xa90 ./src/main.o
+ .debug_macro   0x00000000      0x16d ./src/main.o
+ .debug_macro   0x00000000       0x22 ./src/main.o
+ .debug_macro   0x00000000       0x56 ./src/main.o
+ .debug_macro   0x00000000       0x51 ./src/main.o
+ .debug_macro   0x00000000      0x103 ./src/main.o
+ .debug_macro   0x00000000       0x6a ./src/main.o
+ .debug_macro   0x00000000      0x1df ./src/main.o
+ .debug_macro   0x00000000       0x16 ./src/main.o
+ .debug_macro   0x00000000      0x1c6 ./src/main.o
+ .debug_macro   0x00000000       0x1c ./src/main.o
+ .debug_macro   0x00000000      0x182 ./src/main.o
+ .debug_macro   0x00000000      0x1d7 ./src/main.o
+ .debug_macro   0x00000000       0x2e ./src/main.o
+ .debug_macro   0x00000000       0x1f ./src/main.o
+ .debug_macro   0x00000000       0x12 ./src/main.o
+ .debug_macro   0x00000000     0x1033 ./src/main.o
+ .debug_macro   0x00000000       0xc3 ./src/main.o
+ .debug_macro   0x00000000      0x14f ./src/main.o
+ .debug_macro   0x00000000       0x80 ./src/main.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .debug_macro   0x00000000      0xa90 ./src/uart.o
+ .debug_macro   0x00000000       0x22 ./src/uart.o
+ .debug_macro   0x00000000       0x56 ./src/uart.o
+ .debug_macro   0x00000000       0x51 ./src/uart.o
+ .debug_macro   0x00000000      0x103 ./src/uart.o
+ .debug_macro   0x00000000       0x6a ./src/uart.o
+ .debug_macro   0x00000000      0x1df ./src/uart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+int_pflash       0x00400000         0x007d4000
+int_dflash       0x10000000         0x00020000
+int_itcm         0x00000000         0x00008000
+int_dtcm         0x20000000         0x0000f000
+int_stack_dtcm   0x2000f000         0x00001000
+int_sram         0x20400000         0x0007ff00
+int_sram_fls_rsv 0x2047ff00         0x00000100
+int_sram_no_cacheable 0x20480000         0x0003bf00
+int_sram_results 0x204bbf00         0x00000100
+int_sram_shareable 0x204bc000         0x00004000
+ram_rsvd2        0x204c0000         0x00000000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./FreeRTOS/Source/croutine.o
+LOAD ./FreeRTOS/Source/event_groups.o
+LOAD ./FreeRTOS/Source/list.o
+LOAD ./FreeRTOS/Source/queue.o
+LOAD ./FreeRTOS/Source/stream_buffer.o
+LOAD ./FreeRTOS/Source/tasks.o
+LOAD ./FreeRTOS/Source/timers.o
+LOAD ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+LOAD ./FreeRTOS/Source/portable/MemMang/heap_1.o
+LOAD ./Project_Settings/Startup_Code/Vector_Table.o
+LOAD ./Project_Settings/Startup_Code/exceptions.o
+LOAD ./Project_Settings/Startup_Code/nvic.o
+LOAD ./Project_Settings/Startup_Code/startup.o
+LOAD ./Project_Settings/Startup_Code/startup_cm7.o
+LOAD ./Project_Settings/Startup_Code/system.o
+LOAD ./src/main.o
+LOAD ./src/uart.o
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+START GROUP
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+                0x00002000                HEAP_SIZE = DEFINED (__heap_size__)?__heap_size__:0x2000
+                0x2040ffff                __STANDBY_RAM_LIMIT_END = 0x2040ffff
+
+.pflash         0x00400000     0x5ab0
+                0x00400000                . = ALIGN (0x2000)
+                0x00400000                __text_start = .
+                0x00400000                __interrupts_init_start = .
+ *(.intc_vector)
+ .intc_vector   0x00400000      0x408 ./Project_Settings/Startup_Code/Vector_Table.o
+                0x00400000                VTABLE
+                0x00400408                . = ALIGN (0x4)
+                0x00400408                __interrupts_init_end = .
+ *(.core_loop)
+ .core_loop     0x00400408        0xc ./Project_Settings/Startup_Code/startup_cm7.o
+                0x00400408                _core_loop
+                0x00400414                . = ALIGN (0x4)
+ *(.startup)
+ *fill*         0x00400414        0xc 
+ .startup       0x00400420      0x204 ./Project_Settings/Startup_Code/startup_cm7.o
+                0x00400420                Reset_Handler
+                0x00400420                _start
+                0x004005a4                MCAL_LTB_TRACE_OFF
+                0x004005a6                _end_of_eunit_test
+                0x00400624                . = ALIGN (0x4)
+ *(.systeminit)
+                0x00400624                . = ALIGN (0x4)
+ *(.text.startup)
+ .text.startup  0x00400624       0x6c ./src/main.o
+                0x00400624                main
+                0x00400690                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00400690        0x0 ./FreeRTOS/Source/croutine.o
+ .text          0x00400690      0x3b0 ./FreeRTOS/Source/event_groups.o
+                0x00400690                xEventGroupCreate
+                0x004006aa                xEventGroupWaitBits
+                0x004007ca                xEventGroupClearBits
+                0x00400818                vEventGroupClearBitsCallback
+                0x0040081c                xEventGroupClearBitsFromISR
+                0x0040082c                xEventGroupGetBitsFromISR
+                0x0040084c                xEventGroupSetBits
+                0x004008da                xEventGroupSync
+                0x004009c2                vEventGroupSetBitsCallback
+                0x004009c6                vEventGroupDelete
+                0x00400a22                xEventGroupSetBitsFromISR
+                0x00400a34                uxEventGroupGetNumber
+                0x00400a3a                vEventGroupSetNumber
+ .text          0x00400a40       0x80 ./FreeRTOS/Source/list.o
+                0x00400a40                vListInitialise
+                0x00400a56                vListInitialiseItem
+                0x00400a5c                vListInsertEnd
+                0x00400a74                vListInsert
+                0x00400aa2                uxListRemove
+ .text          0x00400ac0      0xe04 ./FreeRTOS/Source/queue.o
+                0x00400bda                xQueueGenericReset
+                0x00400c7c                xQueueGenericCreate
+                0x00400cd4                xQueueGetMutexHolder
+                0x00400d06                xQueueGetMutexHolderFromISR
+                0x00400d2a                xQueueCreateCountingSemaphore
+                0x00400d58                xQueueGenericSend
+                0x00400ece                xQueueCreateMutex
+                0x00400ef2                xQueueGiveMutexRecursive
+                0x00400f32                xQueueGenericSendFromISR
+                0x00401028                xQueueGiveFromISR
+                0x00401102                xQueueReceive
+                0x0040124c                xQueueSemaphoreTake
+                0x004013ca                xQueueTakeMutexRecursive
+                0x00401412                xQueuePeek
+                0x0040155c                xQueueReceiveFromISR
+                0x0040162a                xQueuePeekFromISR
+                0x004016b0                uxQueueMessagesWaiting
+                0x004016de                uxQueueSpacesAvailable
+                0x00401710                uxQueueMessagesWaitingFromISR
+                0x0040172c                uxQueueGetQueueNumber
+                0x00401730                vQueueSetQueueNumber
+                0x00401734                ucQueueGetQueueType
+                0x0040173a                uxQueueGetQueueItemSize
+                0x0040173e                uxQueueGetQueueLength
+                0x00401742                xQueueIsQueueEmptyFromISR
+                0x00401764                xQueueIsQueueFullFromISR
+                0x00401788                vQueueAddToRegistry
+                0x004017dc                pcQueueGetName
+                0x00401818                vQueueUnregisterQueue
+                0x00401858                vQueueDelete
+                0x0040187e                vQueueWaitForMessageRestricted
+ .text          0x004018c4      0x934 ./FreeRTOS/Source/stream_buffer.o
+                0x00401a92                xStreamBufferGenericCreate
+                0x00401b40                vStreamBufferDelete
+                0x00401b6a                xStreamBufferReset
+                0x00401bba                xStreamBufferResetFromISR
+                0x00401c1a                xStreamBufferSetTriggerLevel
+                0x00401c46                xStreamBufferSpacesAvailable
+                0x00401c7c                xStreamBufferBytesAvailable
+                0x00401c96                xStreamBufferSend
+                0x00401dd2                xStreamBufferSendFromISR
+                0x00401e7a                xStreamBufferReceive
+                0x00401f6a                xStreamBufferNextMessageLengthBytes
+                0x00401fc4                xStreamBufferReceiveFromISR
+                0x00402060                xStreamBufferIsEmpty
+                0x00402084                xStreamBufferIsFull
+                0x004020b8                xStreamBufferSendCompletedFromISR
+                0x0040210e                xStreamBufferReceiveCompletedFromISR
+                0x00402164                uxStreamBufferGetStreamBufferNotificationIndex
+                0x00402180                vStreamBufferSetStreamBufferNotificationIndex
+                0x004021e8                uxStreamBufferGetStreamBufferNumber
+                0x004021ec                vStreamBufferSetStreamBufferNumber
+                0x004021f0                ucStreamBufferGetStreamBufferType
+ .text          0x004021f8     0x1c70 ./FreeRTOS/Source/tasks.o
+                0x00402374                xTaskCreate
+                0x00402518                vTaskDelete
+                0x004025c4                eTaskGetState
+                0x00402650                uxTaskPriorityGet
+                0x00402670                uxTaskPriorityGetFromISR
+                0x004026a4                uxTaskBasePriorityGet
+                0x004026c4                uxTaskBasePriorityGetFromISR
+                0x004026f8                vTaskPrioritySet
+                0x004027d8                vTaskResume
+                0x0040286c                xTaskResumeFromISR
+                0x00402928                vTaskStartScheduler
+                0x004029b8                vTaskEndScheduler
+                0x004029f8                vTaskSuspendAll
+                0x00402a0c                xTaskGetTickCount
+                0x00402a18                xTaskGetTickCountFromISR
+                0x00402a28                uxTaskGetNumberOfTasks
+                0x00402a34                pcTaskGetName
+                0x00402a5c                xTaskIncrementTick
+                0x00402bac                xTaskResumeAll
+                0x00402cd0                xTaskDelayUntil
+                0x00402d78                vTaskDelay
+                0x00402dcc                xTaskGetHandle
+                0x00402e50                xTaskCatchUpTicks
+                0x00402e94                xTaskAbortDelay
+                0x00402f30                vTaskSwitchContext
+                0x00402fa0                vTaskSuspend
+                0x00403048                vTaskPlaceOnEventList
+                0x00403080                vTaskPlaceOnUnorderedEventList
+                0x004030f4                vTaskPlaceOnEventListRestricted
+                0x00403154                xTaskRemoveFromEventList
+                0x00403220                vTaskRemoveFromUnorderedEventList
+                0x004032e0                vTaskSetTimeOutState
+                0x00403318                vTaskInternalSetTimeOutState
+                0x0040332c                xTaskCheckForTimeOut
+                0x004033bc                vTaskMissedYield
+                0x004033cc                uxTaskGetTaskNumber
+                0x004033d2                vTaskSetTaskNumber
+                0x004033d8                vTaskGetInfo
+                0x004034aa                uxTaskGetSystemState
+                0x00403548                uxTaskGetStackHighWaterMark
+                0x00403564                xTaskGetCurrentTaskHandle
+                0x00403570                xTaskGetCurrentTaskHandleForCore
+                0x00403580                xTaskGetSchedulerState
+                0x004035a0                xTaskPriorityInherit
+                0x00403630                xTaskPriorityDisinherit
+                0x004036cc                vTaskPriorityDisinheritAfterTimeout
+                0x0040377c                vTaskListTasks
+                0x00403864                uxTaskResetEventItemValue
+                0x0040387c                pvTaskIncrementMutexHeldCount
+                0x00403890                ulTaskGenericNotifyTake
+                0x00403924                xTaskGenericNotifyWait
+                0x004039e4                xTaskGenericNotify
+                0x00403b10                xTaskGenericNotifyFromISR
+                0x00403c84                vTaskGenericNotifyGiveFromISR
+                0x00403dac                xTaskGenericNotifyStateClear
+                0x00403df4                ulTaskGenericNotifyValueClear
+                0x00403e38                vTaskResetState
+ .text          0x00403e68      0x5fc ./FreeRTOS/Source/timers.o
+                0x00404100                xTimerCreateTimerTask
+                0x0040414c                xTimerCreate
+                0x004041aa                xTimerGenericCommandFromTask
+                0x0040420c                xTimerGenericCommandFromISR
+                0x00404264                xTimerGetTimerDaemonTaskHandle
+                0x00404288                xTimerGetPeriod
+                0x004042a4                vTimerSetReloadMode
+                0x004042e2                xTimerGetReloadMode
+                0x00404316                uxTimerGetReloadMode
+                0x0040431a                xTimerGetExpiryTime
+                0x00404336                pcTimerGetName
+                0x00404352                xTimerIsTimerActive
+                0x00404386                pvTimerGetTimerID
+                0x004043b4                vTimerSetTimerID
+                0x004043e0                xTimerPendFunctionCallFromISR
+                0x00404408                xTimerPendFunctionCall
+                0x0040444c                uxTimerGetTimerNumber
+                0x00404450                vTimerSetTimerNumber
+                0x00404454                vTimerResetState
+ .text          0x00404464      0x3e0 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+                0x0040448c                PendSV_Handler
+                0x00404500                vPortSVCHandler
+                0x00404598                pxPortInitialiseStack
+                0x004045bc                vPortEndScheduler
+                0x004045e4                vPortEnterCritical
+                0x0040462c                vPortExitCritical
+                0x00404658                SysTick_Handler
+                0x00404688                vPortSetupTimerInterrupt
+                0x004046a0                xPortStartScheduler
+                0x004047e0                vPortValidateInterruptPriority
+ .text          0x00404844       0x98 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+                0x00404844                pvPortMalloc
+                0x00404898                vPortFree
+                0x004048b2                vPortInitialiseBlocks
+                0x004048c0                xPortGetFreeHeapSize
+                0x004048d0                vPortHeapResetState
+ .text          0x004048dc        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+ .text          0x004048dc        0x0 ./Project_Settings/Startup_Code/exceptions.o
+ .text          0x004048dc        0x0 ./Project_Settings/Startup_Code/nvic.o
+ .text          0x004048dc        0x0 ./Project_Settings/Startup_Code/startup.o
+ .text          0x004048dc        0x0 ./Project_Settings/Startup_Code/startup_cm7.o
+ .text          0x004048dc       0x10 ./Project_Settings/Startup_Code/system.o
+                0x004048dc                Sys_GetCoreID
+ .text          0x004048ec       0x80 ./src/main.o
+                0x004048ec                SendTask
+                0x00404930                ReceiveTask
+ .text          0x0040496c       0x3c ./src/uart.o
+                0x0040496c                UART_init
+                0x00404994                UART_printf
+ .text          0x004049a8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x004049a8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .text          0x004049a8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+ .text          0x004049a8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+ .text          0x004049a8       0x10 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
+                0x004049a8                strlen
+ .text          0x004049b8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .text          0x004049b8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+ .text          0x004049b8        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x004049b8        0x8 
+ .text          0x004049c0       0xa0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memchr.o)
+                0x004049c0                memchr
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .text          0x00404a60        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ *(.text*)
+ .text.memcpy   0x00404a60       0x1c c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x00404a60                memcpy
+ .text.memset   0x00404a7c       0x10 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                0x00404a7c                memset
+ .text._snprintf_r
+                0x00404a8c       0x5e c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+                0x00404a8c                _snprintf_r
+                0x00404a8c                _sniprintf_r
+ *fill*         0x00404aea        0x2 
+ .text.snprintf
+                0x00404aec       0x68 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+                0x00404aec                sniprintf
+                0x00404aec                snprintf
+ .text.strcpy   0x00404b54       0x10 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+                0x00404b54                strcpy
+ .text.__ssputs_r
+                0x00404b64       0xb6 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00404b64                __ssputs_r
+ .text.__ssprint_r
+                0x00404c1a       0xf6 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00404c1a                __ssprint_r
+ .text._svfprintf_r
+                0x00404d10      0x200 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00404d10                _svfiprintf_r
+                0x00404d10                _svfprintf_r
+ .text._printf_common
+                0x00404f10       0xda c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00404f10                _printf_common
+ *fill*         0x00404fea        0x2 
+ .text._printf_i
+                0x00404fec      0x24c c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00404fec                _printf_i
+ .text.memmove  0x00405238       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+                0x00405238                memmove
+ .text._free_r  0x0040526c       0x98 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+                0x0040526c                _free_r
+ .text._malloc_r
+                0x00405304       0xb4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00405304                _malloc_r
+ .text._realloc_r
+                0x004053b8       0x4c c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+                0x004053b8                _realloc_r
+ .text._sbrk_r  0x00405404       0x20 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+                0x00405404                _sbrk_r
+ .text.__malloc_lock
+                0x00405424        0x2 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+                0x00405424                __malloc_lock
+ .text.__malloc_unlock
+                0x00405426        0x2 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+                0x00405426                __malloc_unlock
+ .text._malloc_usable_size_r
+                0x00405428       0x10 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+                0x00405428                _malloc_usable_size_r
+ .text.cleanup_glue
+                0x00405438       0x1a c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+                0x00405438                cleanup_glue
+ *fill*         0x00405452        0x2 
+ .text._reclaim_reent
+                0x00405454       0xb8 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+                0x00405454                _reclaim_reent
+ .text._sbrk    0x0040550c       0x1c c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+                0x0040550c                _sbrk
+                0x00405528                . = ALIGN (0x4)
+ *(.mcal_text)
+ .mcal_text     0x00405528       0x14 ./Project_Settings/Startup_Code/exceptions.o
+                0x00405528                NMI_Handler
+                0x0040552a                HardFault_Handler
+                0x0040552c                MemManage_Handler
+                0x0040552e                BusFault_Handler
+                0x00405530                UsageFault_Handler
+                0x00405532                SVC_Handler
+                0x00405534                DebugMon_Handler
+                0x0040553a                undefined_handler
+ .mcal_text     0x0040553c       0x52 ./Project_Settings/Startup_Code/nvic.o
+                0x0040553c                NVIC_SetPriorityGrouping
+                0x00405550                NVIC_EnableIRQ
+                0x00405568                NVIC_DisableIRQ
+                0x00405580                NVIC_SetPriority
+ *fill*         0x0040558e        0x2 
+ .mcal_text     0x00405590       0xe8 ./Project_Settings/Startup_Code/startup.o
+                0x00405590                init_data_bss
+                0x0040561c                init_data_bss_core2
+ .mcal_text     0x00405678      0x324 ./Project_Settings/Startup_Code/system.o
+                0x00405678                startup_go_to_user_mode
+                0x0040567a                default_interrupt_routine
+                0x0040567c                SystemInit
+                0x00405980                Enable_FPU
+                0x0040599c                . = ALIGN (0x4)
+ *(.acmcu_code_rom)
+                0x0040599c                . = ALIGN (0x4)
+                0x0040599c                __acfls_code_rom_start = .
+ *(.acfls_code_rom)
+                0x0040599c                . = ALIGN (0x4)
+                0x0040599c                __acfls_code_rom_end = .
+                0x0040599c                __acmem_43_infls_code_rom_start = .
+ *(.acmem_43_infls_code_rom)
+                0x0040599c                . = ALIGN (0x4)
+                0x0040599c                __acmem_43_infls_code_rom_end = .
+ *(.init)
+                0x0040599c                . = ALIGN (0x4)
+ *(.fini)
+                0x0040599c                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x0040599c        0x5 ./FreeRTOS/Source/tasks.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x004059a1       0x14 ./FreeRTOS/Source/tasks.o
+ .rodata.str1.1
+                0x004059b5        0xd ./FreeRTOS/Source/timers.o
+ .rodata.str1.1
+                0x004059c2       0x4b ./src/main.o
+ *fill*         0x00405a0d        0x3 
+ .rodata._global_impure_ptr
+                0x00405a10        0x4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x00405a10                _global_impure_ptr
+ .rodata._svfprintf_r.str1.1
+                0x00405a14       0x11 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+ .rodata._printf_i.str1.1
+                0x00405a25       0x22 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00405a48                . = ALIGN (0x4)
+ *fill*         0x00405a47        0x1 
+ *(.mcal_const_cfg)
+                0x00405a48                . = ALIGN (0x4)
+ *(.mcal_const)
+                0x00405a48                . = ALIGN (0x4)
+                0x00405a48                __init_table = .
+ *(.init_table)
+ .init_table    0x00405a48       0x4c ./Project_Settings/Startup_Code/startup_cm7.o
+                0x00405a94                . = ALIGN (0x4)
+                0x00405a94                __zero_table = .
+ *(.zero_table)
+ .zero_table    0x00405a94       0x1c ./Project_Settings/Startup_Code/startup_cm7.o
+
+.glue_7         0x00405ab0        0x0
+ .glue_7        0x00405ab0        0x0 linker stubs
+
+.glue_7t        0x00405ab0        0x0
+ .glue_7t       0x00405ab0        0x0 linker stubs
+
+.vfp11_veneer   0x00405ab0        0x0
+ .vfp11_veneer  0x00405ab0        0x0 linker stubs
+
+.v4_bx          0x00405ab0        0x0
+ .v4_bx         0x00405ab0        0x0 linker stubs
+
+.iplt           0x00405ab0        0x0
+ .iplt          0x00405ab0        0x0 ./FreeRTOS/Source/event_groups.o
+
+.boot_header    0x00405ab0      0x100
+ .boot_header   0x00405ab0      0x100 ./Project_Settings/Startup_Code/startup_cm7.o
+
+.rel.dyn        0x00405bb0        0x0
+ .rel.iplt      0x00405bb0        0x0 ./FreeRTOS/Source/event_groups.o
+
+.vectors
+ *(.vectors)
+                0x00405bb0                . = ALIGN (0x4)
+                0x00405bb0                __text_end = .
+                0x00405bb0                __sram_data_rom = __text_end
+
+.sram_bss       0x20400000     0x2204
+                0x20400000                . = ALIGN (0x8)
+                0x20400000                __standby_ram_begin__ = .
+ *(.standby_data)
+                0x20400000                . = ALIGN (0x8)
+                0x20400000                __standby_ram_end__ = .
+                0x20400000                . = ALIGN (0x10)
+                0x20400000                __sram_bss_start = .
+ *(.bss)
+ .bss           0x20400000        0x0 ./FreeRTOS/Source/croutine.o
+ .bss           0x20400000        0x0 ./FreeRTOS/Source/event_groups.o
+ .bss           0x20400000        0x0 ./FreeRTOS/Source/list.o
+ .bss           0x20400000       0x10 ./FreeRTOS/Source/queue.o
+                0x20400000                xQueueRegistry
+ .bss           0x20400010        0x0 ./FreeRTOS/Source/stream_buffer.o
+ .bss           0x20400010      0x104 ./FreeRTOS/Source/tasks.o
+                0x2040001c                pxCurrentTCB
+ .bss           0x20400114       0x3c ./FreeRTOS/Source/timers.o
+ .bss           0x20400150        0xd ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+                0x20400150                svc_id
+ *fill*         0x2040015d        0x3 
+ .bss           0x20400160     0x2008 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .bss           0x20402168        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+ .bss           0x20402168        0x0 ./Project_Settings/Startup_Code/exceptions.o
+ .bss           0x20402168        0x0 ./Project_Settings/Startup_Code/nvic.o
+ .bss           0x20402168        0x0 ./Project_Settings/Startup_Code/startup.o
+ .bss           0x20402168        0x0 ./Project_Settings/Startup_Code/startup_cm7.o
+ .bss           0x20402168       0x80 ./Project_Settings/Startup_Code/system.o
+                0x20402168                rbar
+                0x204021a8                rasr
+ .bss           0x204021e8        0x4 ./src/main.o
+                0x204021e8                sem_handle
+ .bss           0x204021ec        0x0 ./src/uart.o
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memchr.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .bss           0x204021ec        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ *(.bss*)
+ .bss.__malloc_free_list
+                0x204021ec        0x4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x204021ec                __malloc_free_list
+ .bss.__malloc_sbrk_start
+                0x204021f0        0x4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x204021f0                __malloc_sbrk_start
+ .bss.errno     0x204021f4        0x4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+                0x204021f4                errno
+ .bss.heap_end.0
+                0x204021f8        0x4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+                0x20402200                . = ALIGN (0x10)
+ *fill*         0x204021fc        0x4 
+ *(.mcal_bss)
+ .mcal_bss      0x20402200        0x4 ./Project_Settings/Startup_Code/system.o
+                0x20402200                RESET_CATCH_CORE
+                0x20402204                . = ALIGN (0x4)
+                0x20402204                __sram_bss_end = .
+
+.sram_data      0x20402204       0x6c load address 0x00405bb0
+                0x20402204                . = ALIGN (0x4)
+                0x20402204                __sram_data_begin__ = .
+                0x20402204                . = ALIGN (0x4)
+ *(.ramcode)
+                0x20402204                . = ALIGN (0x4)
+ *(.data)
+ .data          0x20402204        0x0 ./FreeRTOS/Source/croutine.o
+ .data          0x20402204        0x0 ./FreeRTOS/Source/event_groups.o
+ .data          0x20402204        0x0 ./FreeRTOS/Source/list.o
+ .data          0x20402204        0x0 ./FreeRTOS/Source/queue.o
+ .data          0x20402204        0x0 ./FreeRTOS/Source/stream_buffer.o
+ .data          0x20402204        0x4 ./FreeRTOS/Source/tasks.o
+ .data          0x20402208        0x0 ./FreeRTOS/Source/timers.o
+ .data          0x20402208        0x4 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .data          0x2040220c        0x0 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .data          0x2040220c        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+ .data          0x2040220c        0x0 ./Project_Settings/Startup_Code/exceptions.o
+ .data          0x2040220c        0x0 ./Project_Settings/Startup_Code/nvic.o
+ .data          0x2040220c        0x0 ./Project_Settings/Startup_Code/startup.o
+ .data          0x2040220c        0x0 ./Project_Settings/Startup_Code/startup_cm7.o
+ .data          0x2040220c        0x0 ./Project_Settings/Startup_Code/system.o
+ .data          0x2040220c        0x0 ./src/main.o
+ .data          0x2040220c        0x0 ./src/uart.o
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memchr.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .data          0x2040220c        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+ *(.data*)
+ .data._impure_ptr
+                0x2040220c        0x4 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x2040220c                _impure_ptr
+ .data.impure_data
+                0x20402210       0x60 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x20402270                . = ALIGN (0x4)
+ *(.mcal_data)
+                0x20402270                . = ALIGN (0x4)
+                0x20402270                __sram_data_end__ = .
+                0x00405c1c                __sram_data_rom_end = (__sram_data_rom + (__sram_data_end__ - __sram_data_begin__))
+
+.heap           0x20402270     0x2000 load address 0x00405c1c
+                0x00000000                . = (. + ALIGN (0x4))
+                0x20402270                _end = .
+                0x20402270                end = .
+                0x20402270                _heap_start = .
+                0x00002000                . = (. + HEAP_SIZE)
+ *fill*         0x20402270     0x2000 
+                0x20404270                _heap_end = .
+
+.acfls_code_ram
+                0x2047ff00        0x0
+                0x2047ff00                __acfls_code_ram_start = .
+ *(.acfls_code_ram)
+                0x2047ff00                __acfls_code_ram_end = .
+                0x2047ff00                __acmem_43_infls_code_ram_start = .
+ *(.acmem_43_infls_code_ram)
+                0x2047ff00                __acmem_43_infls_code_ram_end = .
+                0x00405c1c                __non_cacheable_data_rom = __sram_data_rom_end
+
+.non_cacheable_data
+                0x20480000        0x4 load address 0x00405c1c
+                0x20480000                . = ALIGN (0x4)
+                0x20480000                __non_cacheable_data_start__ = .
+ *(.mcal_data_no_cacheable)
+                0x20480000                . = ALIGN (0x4)
+ *(.mcal_const_no_cacheable)
+                0x20480000                . = ALIGN (0x4)
+                0x20480000                HSE_LOOP_ADDR = .
+                0x20480000        0x4 LONG 0x0
+                0x20480004                __non_cacheable_data_end__ = .
+                0x00405c20                __non_cacheable_data_rom_end = (__non_cacheable_data_rom + (__non_cacheable_data_end__ - __non_cacheable_data_start__))
+
+.igot.plt       0x20480004        0x0 load address 0x00405c20
+ .igot.plt      0x20480004        0x0 ./FreeRTOS/Source/event_groups.o
+
+.non_cacheable_bss
+                0x20480004        0xc load address 0x00405c20
+                0x20480010                . = ALIGN (0x10)
+ *fill*         0x20480004        0xc 
+                0x20480010                __non_cacheable_bss_start = .
+ *(.mcal_bss_no_cacheable)
+                0x20480010                . = ALIGN (0x4)
+                0x20480010                __non_cacheable_bss_end = .
+
+.int_results    0x204bbf00      0x100
+                0x204bbf00                . = ALIGN (0x4)
+ *(.int_results)
+                0x204bc000                . = (. + 0x100)
+ *fill*         0x204bbf00      0x100 
+                0x00405c20                __shareable_data_rom = __non_cacheable_data_rom_end
+
+.shareable_data
+                0x204bc000        0x0 load address 0x00405c20
+                0x204bc000                . = ALIGN (0x4)
+                0x204bc000                __shareable_data_start__ = .
+ *(.mcal_shared_data)
+                0x204bc000                . = ALIGN (0x4)
+                0x204bc000                __shareable_data_end__ = .
+                0x00405c20                __shareable_data_rom_end = (__shareable_data_rom + (__shareable_data_end__ - __shareable_data_start__))
+
+.int_vector     0x20000000      0x408
+                0x20000000                . = ALIGN (0x800)
+                0x20000000                __interrupts_ram_start = .
+                0x20000408                . = (. + (__interrupts_init_end - __interrupts_init_start))
+ *fill*         0x20000000      0x408 
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __interrupts_ram_end = .
+                0x00405c20                __tcm_data_rom = __shareable_data_rom_end
+
+.data_tcm_data  0x20000408        0x0 load address 0x00405c20
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_data_start__ = .
+ *(.dtcm_data*)
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_data_end__ = .
+                0x00405c20                __tcm_data_rom_end = (__tcm_data_rom + (__dtcm_data_end__ - __dtcm_data_start__))
+
+.bss_tcm_data   0x20000408        0x0
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_bss_start__ = .
+ *(.dtcm_bss*)
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_bss_end__ = .
+                0x00405c20                __tcm_code_rom_start = __tcm_data_rom_end
+
+.itcm_text      0x00000000        0x0 load address 0x00405c20
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __itcm_start__ = .
+ *(.itcm_text*)
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __itcm_end__ = .
+                0x00405c20                __tcm_code_rom_end = (__tcm_code_rom_start + (__itcm_end__ - __itcm_start__))
+
+.shareable_bss  0x204bc000        0x0
+                0x204bc000                . = ALIGN (0x10)
+                0x204bc000                __shareable_bss_start = .
+ *(.mcal_shared_bss)
+                0x204bc000                . = ALIGN (0x4)
+                0x204bc000                __shareable_bss_end = .
+                0x2000f000                __Stack_dtcm_end = ORIGIN (int_stack_dtcm)
+                0x20010000                __Stack_dtcm_start = (ORIGIN (int_stack_dtcm) + LENGTH (int_stack_dtcm))
+                0x20400000                __INT_SRAM_START = ORIGIN (int_sram)
+                0x204c0000                __INT_SRAM_END = ORIGIN (ram_rsvd2)
+                0x00000000                __INT_ITCM_START = ORIGIN (int_itcm)
+                0x00008000                __INT_ITCM_END = (ORIGIN (int_itcm) + LENGTH (int_itcm))
+                0x20000000                __INT_DTCM_START = ORIGIN (int_dtcm)
+                0x20010000                __INT_DTCM_END = ((ORIGIN (int_dtcm) + LENGTH (int_dtcm)) + LENGTH (int_stack_dtcm))
+                0x204bc000                __RAM_SHAREABLE_START = __shareable_data_start__
+                0x0000000e                __RAM_SHAREABLE_SIZE = 0xe
+                0x00405c20                __ROM_SHAREABLE_START = __shareable_data_rom
+                0x00405c20                __ROM_SHAREABLE_END = __shareable_data_rom_end
+                0x20480000                __RAM_NO_CACHEABLE_START = __non_cacheable_data_start__
+                0x00000012                __RAM_NO_CACHEABLE_SIZE = 0x12
+                0x00405c1c                __ROM_NO_CACHEABLE_START = __non_cacheable_data_rom
+                0x00405c20                __ROM_NO_CACHEABLE_END = __non_cacheable_data_rom_end
+                0x20402204                __RAM_CACHEABLE_START = __sram_data_begin__
+                0x00000013                __RAM_CACHEABLE_SIZE = 0x13
+                0x00405bb0                __ROM_CACHEABLE_START = __sram_data_rom
+                0x00405c1c                __ROM_CACHEABLE_END = __sram_data_rom_end
+                0x00400000                __ROM_CODE_START = ORIGIN (int_pflash)
+                0x10000000                __ROM_DATA_START = ORIGIN (int_dflash)
+                0x20400000                __BSS_SRAM_START = __sram_bss_start
+                0x20402204                __BSS_SRAM_END = __sram_bss_end
+                0x00002204                __BSS_SRAM_SIZE = (__sram_bss_end - __sram_bss_start)
+                0x20480010                __BSS_SRAM_NC_START = __non_cacheable_bss_start
+                0x00000000                __BSS_SRAM_NC_SIZE = (__non_cacheable_bss_end - __non_cacheable_bss_start)
+                0x20480010                __BSS_SRAM_NC_END = __non_cacheable_bss_end
+                0x204bc000                __BSS_SRAM_SH_START = __shareable_bss_start
+                0x00000000                __BSS_SRAM_SH_SIZE = (__shareable_bss_end - __shareable_bss_start)
+                0x204bc000                __BSS_SRAM_SH_END = __shareable_bss_end
+                0x20000000                __RAM_INTERRUPT_START = __interrupts_ram_start
+                0x00400000                __INIT_INTERRUPT_START = __interrupts_init_start
+                0x00400408                __INIT_INTERRUPT_END = __interrupts_init_end
+                0x00000000                __RAM_ITCM_START = __itcm_start__
+                0x00405c20                __ROM_ITCM_START = __tcm_code_rom_start
+                0x00405c20                __ROM_ITCM_END = __tcm_code_rom_end
+                0x20000408                __RAM_DTCM_DATA_START = __dtcm_data_start__
+                0x00405c20                __ROM_DTCM_DATA_START = __tcm_data_rom
+                0x00405c20                __ROM_DTCM_END = __tcm_data_rom_end
+                0x00405a48                __INIT_TABLE = __init_table
+                0x00405a94                __ZERO_TABLE = __zero_table
+                0x00000001                __RAM_INIT = 0x1
+                0x00000001                __ITCM_INIT = 0x1
+                0x00000001                __DTCM_INIT = 0x1
+                0x0040599c                Fls_ACEraseRomStart = __acfls_code_rom_start
+                0x0040599c                Fls_ACEraseRomEnd = __acfls_code_rom_end
+                0x00000000                Fls_ACEraseSize = ((__acfls_code_rom_end - __acfls_code_rom_start) / 0x4)
+                0x0040599c                Fls_ACWriteRomStart = __acfls_code_rom_start
+                0x0040599c                Fls_ACWriteRomEnd = __acfls_code_rom_end
+                0x00000000                Fls_ACWriteSize = ((__acfls_code_rom_end - __acfls_code_rom_start) / 0x4)
+                0x2047ff00                _ERASE_FUNC_ADDRESS_ = __acfls_code_ram_start
+                0x2047ff00                _WRITE_FUNC_ADDRESS_ = __acfls_code_ram_start
+                0x0040599c                Mem_43_INFLS_ACEraseRomStart = __acmem_43_infls_code_rom_start
+                0x0040599c                Mem_43_INFLS_ACEraseRomEnd = __acmem_43_infls_code_rom_end
+                0x00000000                Mem_43_INFLS_ACEraseSize = (((__acmem_43_infls_code_rom_end - __acmem_43_infls_code_rom_start) + 0x3) / 0x4)
+                0x0040599c                Mem_43_INFLS_ACWriteRomStart = __acmem_43_infls_code_rom_start
+                0x0040599c                Mem_43_INFLS_ACWriteRomEnd = __acmem_43_infls_code_rom_end
+                0x00000000                Mem_43_INFLS_ACWriteSize = (((__acmem_43_infls_code_rom_end - __acmem_43_infls_code_rom_start) + 0x3) / 0x4)
+                0x2047ff00                _MEM_43_INFLS_ERASE_FUNC_ADDRESS_ = __acmem_43_infls_code_ram_start
+                0x2047ff00                _MEM_43_INFLS_WRITE_FUNC_ADDRESS_ = __acmem_43_infls_code_ram_start
+                0x00400000                __ENTRY_VTABLE = __INIT_INTERRUPT_START
+                0x00400000                __CORE0_VTOR = __INIT_INTERRUPT_START
+                0x00400000                __CORE1_VTOR = __INIT_INTERRUPT_START
+                0x00400000                __CORE2_VTOR = __INIT_INTERRUPT_START
+                0x00400000                __CORE3_VTOR = __INIT_INTERRUPT_START
+                0x00000003                __INDEX_COPY_CORE2 = 0x3
+                0x00000001                ASSERT ((__standby_ram_end__ <= __STANDBY_RAM_LIMIT_END), Memory for standby ram overflow)
+OUTPUT(TestFreeRTOS_S32K358.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0xd439
+ .debug_info    0x00000000       0x6f ./FreeRTOS/Source/croutine.o
+ .debug_info    0x0000006f      0xeee ./FreeRTOS/Source/event_groups.o
+ .debug_info    0x00000f5d      0x2d8 ./FreeRTOS/Source/list.o
+ .debug_info    0x00001235     0x25c9 ./FreeRTOS/Source/queue.o
+ .debug_info    0x000037fe     0x1f84 ./FreeRTOS/Source/stream_buffer.o
+ .debug_info    0x00005782     0x3f63 ./FreeRTOS/Source/tasks.o
+ .debug_info    0x000096e5     0x1705 ./FreeRTOS/Source/timers.o
+ .debug_info    0x0000adea      0x675 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_info    0x0000b45f      0x202 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_info    0x0000b661      0x139 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_info    0x0000b79a      0x76c ./Project_Settings/Startup_Code/nvic.o
+ .debug_info    0x0000bf06      0x333 ./Project_Settings/Startup_Code/startup.o
+ .debug_info    0x0000c239       0x22 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_info    0x0000c25b      0xd5b ./Project_Settings/Startup_Code/system.o
+ .debug_info    0x0000cfb6      0x3ae ./src/main.o
+ .debug_info    0x0000d364       0xd5 ./src/uart.o
+
+.debug_abbrev   0x00000000     0x1d1e
+ .debug_abbrev  0x00000000       0x29 ./FreeRTOS/Source/croutine.o
+ .debug_abbrev  0x00000029      0x2c3 ./FreeRTOS/Source/event_groups.o
+ .debug_abbrev  0x000002ec      0x102 ./FreeRTOS/Source/list.o
+ .debug_abbrev  0x000003ee      0x342 ./FreeRTOS/Source/queue.o
+ .debug_abbrev  0x00000730      0x2f2 ./FreeRTOS/Source/stream_buffer.o
+ .debug_abbrev  0x00000a22      0x44b ./FreeRTOS/Source/tasks.o
+ .debug_abbrev  0x00000e6d      0x3b2 ./FreeRTOS/Source/timers.o
+ .debug_abbrev  0x0000121f      0x2cc ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_abbrev  0x000014eb      0x18f ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_abbrev  0x0000167a       0x47 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_abbrev  0x000016c1      0x111 ./Project_Settings/Startup_Code/nvic.o
+ .debug_abbrev  0x000017d2      0x11d ./Project_Settings/Startup_Code/startup.o
+ .debug_abbrev  0x000018ef       0x12 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_abbrev  0x00001901      0x227 ./Project_Settings/Startup_Code/system.o
+ .debug_abbrev  0x00001b28      0x160 ./src/main.o
+ .debug_abbrev  0x00001c88       0x96 ./src/uart.o
+
+.debug_aranges  0x00000000      0x290
+ .debug_aranges
+                0x00000000       0x18 ./FreeRTOS/Source/croutine.o
+ .debug_aranges
+                0x00000018       0x20 ./FreeRTOS/Source/event_groups.o
+ .debug_aranges
+                0x00000038       0x20 ./FreeRTOS/Source/list.o
+ .debug_aranges
+                0x00000058       0x20 ./FreeRTOS/Source/queue.o
+ .debug_aranges
+                0x00000078       0x20 ./FreeRTOS/Source/stream_buffer.o
+ .debug_aranges
+                0x00000098       0x20 ./FreeRTOS/Source/tasks.o
+ .debug_aranges
+                0x000000b8       0x20 ./FreeRTOS/Source/timers.o
+ .debug_aranges
+                0x000000d8       0x20 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_aranges
+                0x000000f8       0x20 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_aranges
+                0x00000118       0x68 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_aranges
+                0x00000180       0x38 ./Project_Settings/Startup_Code/nvic.o
+ .debug_aranges
+                0x000001b8       0x28 ./Project_Settings/Startup_Code/startup.o
+ .debug_aranges
+                0x000001e0       0x28 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_aranges
+                0x00000208       0x40 ./Project_Settings/Startup_Code/system.o
+ .debug_aranges
+                0x00000248       0x28 ./src/main.o
+ .debug_aranges
+                0x00000270       0x20 ./src/uart.o
+
+.debug_macro    0x00000000    0x55f93
+ .debug_macro   0x00000000       0xe8 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000000e8      0xa90 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000b78      0x16d ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000ce5       0x22 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000d07       0x56 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000d5d       0x51 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000dae      0x103 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000eb1       0x6a ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00000f1b      0x1df ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000010fa       0x16 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00001110      0x1c6 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000012d6       0x1c ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000012f2      0x182 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00001474      0x1d7 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x0000164b       0x2e ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00001679       0x1f ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00001698       0x12 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000016aa     0x1033 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000026dd       0xc3 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000027a0      0x14f ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x000028ef       0x49 ./FreeRTOS/Source/croutine.o
+ .debug_macro   0x00002938      0x1bf ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002af7       0x18 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002b0f       0x52 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002b61       0x5c ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002bbd       0x35 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002bf2       0x34 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002c26       0x16 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002c3c      0x10e ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002d4a       0x86 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002dd0       0x16 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002de6       0x43 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002e29       0x57 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002e80       0x34 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002eb4       0x10 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002ec4       0x52 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00002f16      0x182 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00003098      0x356 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x000033ee       0x22 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x00003410       0x98 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x000034a8       0x23 ./FreeRTOS/Source/event_groups.o
+ .debug_macro   0x000034cb      0x18a ./FreeRTOS/Source/list.o
+ .debug_macro   0x00003655      0x208 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x0000385d       0x16 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00003873       0x35 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x000038a8       0x80 ./FreeRTOS/Source/queue.o
+ .debug_macro   0x00003928      0x1ec ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00003b14       0x10 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00003b24       0x38 ./FreeRTOS/Source/stream_buffer.o
+ .debug_macro   0x00003b5c      0x2ea ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00003e46       0x17 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00003e5d       0x1c ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00003e79       0x10 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00003e89       0xbe ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00003f47       0x16 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00003f5d      0x129 ./FreeRTOS/Source/tasks.o
+ .debug_macro   0x00004086      0x1d9 ./FreeRTOS/Source/timers.o
+ .debug_macro   0x0000425f       0x9e ./FreeRTOS/Source/timers.o
+ .debug_macro   0x000042fd      0x1c3 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_macro   0x000044c0      0x19f ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_macro   0x0000465f      0x1f1 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00004850       0x88 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000048d8      0x97b ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00005253       0x3a ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x0000528d       0xcc ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00005359       0x6e ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000053c7       0x4c ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00005413       0x94 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000054a7       0xc8 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x0000556f      0x11e ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x0000568d       0x52 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000056df       0x16 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000056f5       0x7c ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00005771      0x130 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000058a1     0x1517 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00006db8       0x83 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00006e3b       0x3a ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00006e75       0x50 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00006ec5       0x50 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00006f15      0x1c6 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000070db       0x5f ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x0000713a       0x57 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00007191       0x50 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000071e1       0x50 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00007231      0x4b3 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000076e4     0x5227 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000c90b     0x10cd ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000d9d8     0x10a6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000ea7e      0x180 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000ebfe       0xf8 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000ecf6      0x370 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000f066      0x159 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000f1bf      0xc36 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000fdf5     0x2ad5 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000128ca      0x2ea ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00012bb4       0x8e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00012c42     0xcead ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001faef      0xe9d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0002098c      0xbc7 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00021553      0xd77 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000222ca      0xb4d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00022e17       0x5d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00022e74      0xab9 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0002392d     0x154d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00024e7a      0x867 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000256e1       0xe8 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000257c9     0xef45 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003470e       0xd6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000347e4      0x106 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000348ea      0x507 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00034df1      0x779 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003556a      0xe03 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003636d      0x93f ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00036cac     0x1125 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00037dd1      0x2e6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000380b7     0x12fd ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000393b4     0x23d5 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003b789      0x584 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003bd0d      0x450 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003c15d     0x15d2 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003d72f      0x5b5 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003dce4      0x226 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003df0a      0x216 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003e120      0x512 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003e632       0x78 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003e6aa     0x1c7d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00040327       0x48 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004036f      0x23c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000405ab      0xb27 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000410d2      0x311 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000413e3       0x95 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00041478       0xd6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004154e       0x5e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000415ac     0x914d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004a6f9      0xf89 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004b682      0x10b ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004b78d      0x2e0 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004ba6d       0xcc ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004bb39       0xb3 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004bbec      0x1d0 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004bdbc      0x56e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004c32a     0x1485 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004d7af     0x3d73 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00051522      0x418 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0005193a      0x4ac ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00051de6      0xf43 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00052d29     0x1b53 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0005487c      0xcd9 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00055555      0x392 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000558e7       0x2e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00055915       0x6a ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x0005597f      0x2d1 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00055c50       0x52 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00055ca2       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00055cf2       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00055d42      0x110 ./src/main.o
+ .debug_macro   0x00055e52       0x85 ./src/main.o
+ .debug_macro   0x00055ed7       0x28 ./src/main.o
+ .debug_macro   0x00055eff       0x72 ./src/uart.o
+ .debug_macro   0x00055f71       0x22 ./src/uart.o
+
+.debug_line     0x00000000     0xcae0
+ .debug_line    0x00000000      0x355 ./FreeRTOS/Source/croutine.o
+ .debug_line    0x00000355      0xbd7 ./FreeRTOS/Source/event_groups.o
+ .debug_line    0x00000f2c      0x559 ./FreeRTOS/Source/list.o
+ .debug_line    0x00001485     0x1f29 ./FreeRTOS/Source/queue.o
+ .debug_line    0x000033ae     0x1816 ./FreeRTOS/Source/stream_buffer.o
+ .debug_line    0x00004bc4     0x39ed ./FreeRTOS/Source/tasks.o
+ .debug_line    0x000085b1      0xf72 ./FreeRTOS/Source/timers.o
+ .debug_line    0x00009523      0x87a ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_line    0x00009d9d      0x4c5 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_line    0x0000a262      0x6af ./Project_Settings/Startup_Code/exceptions.o
+ .debug_line    0x0000a911      0xb27 ./Project_Settings/Startup_Code/nvic.o
+ .debug_line    0x0000b438      0x399 ./Project_Settings/Startup_Code/startup.o
+ .debug_line    0x0000b7d1      0x15b ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_line    0x0000b92c      0xab1 ./Project_Settings/Startup_Code/system.o
+ .debug_line    0x0000c3dd      0x493 ./src/main.o
+ .debug_line    0x0000c870      0x270 ./src/uart.o
+
+.debug_str      0x00000000   0x2bcc1c
+ .debug_str     0x00000000     0xf278 ./FreeRTOS/Source/croutine.o
+                               0xf471 (size before relaxing)
+ .debug_str     0x0000f278     0x3728 ./FreeRTOS/Source/event_groups.o
+                              0x125e7 (size before relaxing)
+ .debug_str     0x000129a0       0x97 ./FreeRTOS/Source/list.o
+                              0x10320 (size before relaxing)
+ .debug_str     0x00012a37     0x1392 ./FreeRTOS/Source/queue.o
+                              0x12c54 (size before relaxing)
+ .debug_str     0x00013dc9     0x143a ./FreeRTOS/Source/stream_buffer.o
+                              0x12bec (size before relaxing)
+ .debug_str     0x00015203     0x1e16 ./FreeRTOS/Source/tasks.o
+                              0x14368 (size before relaxing)
+ .debug_str     0x00017019      0x5d1 ./FreeRTOS/Source/timers.o
+                              0x12fcd (size before relaxing)
+ .debug_str     0x000175ea      0x89d ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+                               0xf85b (size before relaxing)
+ .debug_str     0x00017e87       0xe4 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+                              0x11785 (size before relaxing)
+ .debug_str     0x00017f6b     0xeb69 ./Project_Settings/Startup_Code/exceptions.o
+                              0x1da25 (size before relaxing)
+ .debug_str     0x00026ad4   0x294d41 ./Project_Settings/Startup_Code/nvic.o
+                             0x2b26d6 (size before relaxing)
+ .debug_str     0x002bb815      0x14c ./Project_Settings/Startup_Code/startup.o
+                               0x5021 (size before relaxing)
+ .debug_str     0x002bb961       0x3b ./Project_Settings/Startup_Code/startup_cm7.o
+                                 0x78 (size before relaxing)
+ .debug_str     0x002bb99c      0x905 ./Project_Settings/Startup_Code/system.o
+                              0x25fe0 (size before relaxing)
+ .debug_str     0x002bc2a1      0x96d ./src/main.o
+                               0xffd2 (size before relaxing)
+ .debug_str     0x002bcc0e        0xe ./src/uart.o
+                               0x3ded (size before relaxing)
+
+.comment        0x00000000       0x88
+ .comment       0x00000000       0x88 ./FreeRTOS/Source/croutine.o
+                                 0x89 (size before relaxing)
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/event_groups.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/list.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/queue.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/stream_buffer.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/tasks.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/timers.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .comment       0x00000088       0x89 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/exceptions.o
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/nvic.o
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/startup.o
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/system.o
+ .comment       0x00000088       0x89 ./src/main.o
+ .comment       0x00000088       0x89 ./src/uart.o
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+
+.ARM.attributes
+                0x00000000       0x37
+ .ARM.attributes
+                0x00000000       0x39 ./FreeRTOS/Source/croutine.o
+ .ARM.attributes
+                0x00000039       0x34 ./FreeRTOS/Source/event_groups.o
+ .ARM.attributes
+                0x0000006d       0x34 ./FreeRTOS/Source/list.o
+ .ARM.attributes
+                0x000000a1       0x34 ./FreeRTOS/Source/queue.o
+ .ARM.attributes
+                0x000000d5       0x34 ./FreeRTOS/Source/stream_buffer.o
+ .ARM.attributes
+                0x00000109       0x34 ./FreeRTOS/Source/tasks.o
+ .ARM.attributes
+                0x0000013d       0x34 ./FreeRTOS/Source/timers.o
+ .ARM.attributes
+                0x00000171       0x34 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .ARM.attributes
+                0x000001a5       0x34 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .ARM.attributes
+                0x000001d9       0x20 ./Project_Settings/Startup_Code/Vector_Table.o
+ .ARM.attributes
+                0x000001f9       0x34 ./Project_Settings/Startup_Code/exceptions.o
+ .ARM.attributes
+                0x0000022d       0x34 ./Project_Settings/Startup_Code/nvic.o
+ .ARM.attributes
+                0x00000261       0x34 ./Project_Settings/Startup_Code/startup.o
+ .ARM.attributes
+                0x00000295       0x1f ./Project_Settings/Startup_Code/startup_cm7.o
+ .ARM.attributes
+                0x000002b4       0x34 ./Project_Settings/Startup_Code/system.o
+ .ARM.attributes
+                0x000002e8       0x34 ./src/main.o
+ .ARM.attributes
+                0x0000031c       0x34 ./src/uart.o
+ .ARM.attributes
+                0x00000350       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000384       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000003b8       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-snprintf.o)
+ .ARM.attributes
+                0x000003ec       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000420       0x17 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000437       0x32 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000469       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+ .ARM.attributes
+                0x0000049d       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x000004d1       0x1c c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x000004ed       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000521       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x00000555       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x00000589       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x000005bd       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x000005f1       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000625       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x00000659       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000068d       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a(sbrk.o)
+
+.debug_loc      0x00000000     0x88ee
+ .debug_loc     0x00000000      0xbaf ./FreeRTOS/Source/event_groups.o
+ .debug_loc     0x00000baf       0xaf ./FreeRTOS/Source/list.o
+ .debug_loc     0x00000c5e     0x187d ./FreeRTOS/Source/queue.o
+ .debug_loc     0x000024db     0x1a2c ./FreeRTOS/Source/stream_buffer.o
+ .debug_loc     0x00003f07     0x31ce ./FreeRTOS/Source/tasks.o
+ .debug_loc     0x000070d5      0xed5 ./FreeRTOS/Source/timers.o
+ .debug_loc     0x00007faa       0xf5 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_loc     0x0000809f       0x60 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_loc     0x000080ff       0xb9 ./Project_Settings/Startup_Code/nvic.o
+ .debug_loc     0x000081b8      0x3b7 ./Project_Settings/Startup_Code/startup.o
+ .debug_loc     0x0000856f      0x2cb ./Project_Settings/Startup_Code/system.o
+ .debug_loc     0x0000883a       0x74 ./src/main.o
+ .debug_loc     0x000088ae       0x40 ./src/uart.o
+
+.debug_ranges   0x00000000      0x760
+ .debug_ranges  0x00000000       0x50 ./FreeRTOS/Source/event_groups.o
+ .debug_ranges  0x00000050      0x150 ./FreeRTOS/Source/queue.o
+ .debug_ranges  0x000001a0       0x30 ./FreeRTOS/Source/stream_buffer.o
+ .debug_ranges  0x000001d0      0x388 ./FreeRTOS/Source/tasks.o
+ .debug_ranges  0x00000558       0x80 ./FreeRTOS/Source/timers.o
+ .debug_ranges  0x000005d8       0x50 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_ranges  0x00000628       0x58 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_ranges  0x00000680       0x28 ./Project_Settings/Startup_Code/nvic.o
+ .debug_ranges  0x000006a8       0x18 ./Project_Settings/Startup_Code/startup.o
+ .debug_ranges  0x000006c0       0x20 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_ranges  0x000006e0       0x68 ./Project_Settings/Startup_Code/system.o
+ .debug_ranges  0x00000748       0x18 ./src/main.o
+
+.debug_frame    0x00000000     0x15d0
+ .debug_frame   0x00000000      0x140 ./FreeRTOS/Source/event_groups.o
+ .debug_frame   0x00000140       0x6c ./FreeRTOS/Source/list.o
+ .debug_frame   0x000001ac      0x3bc ./FreeRTOS/Source/queue.o
+ .debug_frame   0x00000568      0x2f4 ./FreeRTOS/Source/stream_buffer.o
+ .debug_frame   0x0000085c      0x714 ./FreeRTOS/Source/tasks.o
+ .debug_frame   0x00000f70      0x2a4 ./FreeRTOS/Source/timers.o
+ .debug_frame   0x00001214      0x100 ./FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_frame   0x00001314       0x68 ./FreeRTOS/Source/portable/MemMang/heap_1.o
+ .debug_frame   0x0000137c       0xb0 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_frame   0x0000142c       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .debug_frame   0x0000147c       0x54 ./Project_Settings/Startup_Code/startup.o
+ .debug_frame   0x000014d0       0x70 ./Project_Settings/Startup_Code/system.o
+ .debug_frame   0x00001540       0x60 ./src/main.o
+ .debug_frame   0x000015a0       0x30 ./src/uart.o

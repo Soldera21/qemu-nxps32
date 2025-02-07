@@ -1,0 +1,86 @@
+RTD/src/Siul2_Port_Ip.o: ../RTD/src/Siul2_Port_Ip.c \
+ ../RTD/include/Siul2_Port_Ip.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Std_Types.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Platform_Types.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Compiler.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Compiler_Cfg.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/CompilerDefinition.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/board/Siul2_Port_Ip_Cfg.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_SIUL2.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_COMMON.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/BasicTypes.h \
+ ../RTD/include/Siul2_Port_Ip_Types.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/Siul2_Port_Ip_Defines.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_DCM_GPR.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Port_MemMap.h \
+ ../RTD/include/Siul2_Port_Ip_Types.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Devassert.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Mcal.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Std_Types.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/DeviceDefinition.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/Soc_Ips.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Platform_Types.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/IpVersionMacros.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Reg_eSys.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/OsIf_Internal.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/OsIf_Cfg.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/OsIf_ArchCfg.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_SYSTICK.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_MSCM.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/OsIf_Interrupts.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/BaseNXP_MemMap.h \
+ ../FreeRTOS/Source/include/FreeRTOS.h \
+ D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/FreeRTOSConfig.h \
+ ../FreeRTOS/Source/include/projdefs.h \
+ ../FreeRTOS/Source/include/portable.h \
+ ../FreeRTOS/Source/include/deprecated_definitions.h \
+ ../FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/portmacro.h \
+ ../FreeRTOS/Source/include/mpu_wrappers.h \
+ ../FreeRTOS/Source/include/task.h ../FreeRTOS/Source/include/list.h \
+ ../RTD/include/SchM_Port.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Rte_MemMap.h \
+ C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/RegLockMacros.h \
+ ../RTD/include/OsIf_Internal.h
+../RTD/include/Siul2_Port_Ip.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Std_Types.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Platform_Types.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Compiler.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Compiler_Cfg.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/CompilerDefinition.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/board/Siul2_Port_Ip_Cfg.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_SIUL2.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_COMMON.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/BasicTypes.h:
+../RTD/include/Siul2_Port_Ip_Types.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/Siul2_Port_Ip_Defines.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_DCM_GPR.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Port_MemMap.h:
+../RTD/include/Siul2_Port_Ip_Types.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Devassert.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Mcal.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Std_Types.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/DeviceDefinition.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/Soc_Ips.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Platform_Types.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/IpVersionMacros.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Reg_eSys.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/OsIf_Internal.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/OsIf_Cfg.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/OsIf_ArchCfg.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_SYSTICK.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/header/S32K358_MSCM.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/OsIf_Interrupts.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/BaseNXP_MemMap.h:
+../FreeRTOS/Source/include/FreeRTOS.h:
+D\:/Programmazione/S32K3/FreeRTOS_Example_S32K358/generate/include/FreeRTOSConfig.h:
+../FreeRTOS/Source/include/projdefs.h:
+../FreeRTOS/Source/include/portable.h:
+../FreeRTOS/Source/include/deprecated_definitions.h:
+../FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/portmacro.h:
+../FreeRTOS/Source/include/mpu_wrappers.h:
+../FreeRTOS/Source/include/task.h:
+../FreeRTOS/Source/include/list.h:
+../RTD/include/SchM_Port.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/Rte_MemMap.h:
+C\:/NXP/S32DS.3.6.0/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M50I0R0/include/RegLockMacros.h:
+../RTD/include/OsIf_Internal.h:

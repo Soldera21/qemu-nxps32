@@ -1,6 +1,6 @@
 /*
  * S32K358 SoC
- * RIGA 102 address of sysbus
+ * RIGA 102 address of sysbus ???
  */
 
 #include "qemu/osdep.h"
@@ -12,8 +12,6 @@
 #include "hw/qdev-properties.h"
 #include "hw/qdev-clock.h"
 #include "sysemu/sysemu.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static const uint32_t uart_addr[STM_NUM_UARTS] = { 0x40328000, 0x4032C000, 0x40330000, 0x40334000, 0x40338000, 0x4033C000, 0x40340000, 0x40344000, 0x4048C000, 0x40490000, 0x40494000, 0x40498000, 0x4049C000, 0x404A0000, 0x404A4000, 0x404A8000 };
 
@@ -70,17 +68,23 @@ static void s32k358_soc_realize(DeviceState *dev_soc, Error **errp)
     clock_set_mul_div(s->refclk, 8, 1);
     clock_set_source(s->refclk, s->sysclk);
 
-    memory_region_init_rom(&s->flash, OBJECT(dev_soc), "S32K358.flash",
-                           FLASH_SIZE, &error_fatal);
-    memory_region_init_alias(&s->flash_alias, OBJECT(dev_soc),
-                             "S32K358.flash.alias", &s->flash, 0, FLASH_SIZE);
+    memory_region_init_rom(&s->p_flash, OBJECT(dev_soc), "S32K358.p_flash", PFLASH_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, PFLASH_BASE_ADDRESS, &s->p_flash);
 
-    memory_region_add_subregion(system_memory, FLASH_BASE_ADDRESS, &s->flash);
-    memory_region_add_subregion(system_memory, 0, &s->flash_alias);
+    memory_region_init_rom(&s->d_flash, OBJECT(dev_soc), "S32K358.d_flash", DFLASH_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, DFLASH_BASE_ADDRESS, &s->d_flash);
 
-    memory_region_init_ram(&s->sram, NULL, "S32K358.sram", SRAM_SIZE,
-                           &error_fatal);
-    memory_region_add_subregion(system_memory, SRAM_BASE_ADDRESS, &s->sram);
+    memory_region_init_ram(&s->itcm, NULL, "S32K358.itcm", ITCM_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, ITCM_BASE_ADDRESS, &s->itcm);
+    memory_region_init_ram(&s->dtcm, NULL, "S32K358.dtcm", DTCM_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, DTCM_BASE_ADDRESS, &s->dtcm);
+
+    memory_region_init_ram(&s->sram0, NULL, "S32K358.sram0", SRAM0_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, SRAM0_BASE_ADDRESS, &s->sram0);
+    memory_region_init_ram(&s->sram1, NULL, "S32K358.sram1", SRAM1_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, SRAM1_BASE_ADDRESS, &s->sram1);
+    memory_region_init_ram(&s->sram2, NULL, "S32K358.sram2", SRAM2_SIZE, &error_fatal);
+    memory_region_add_subregion(system_memory, SRAM2_BASE_ADDRESS, &s->sram2);
 
     armv7m = DEVICE(&s->armv7m);
     qdev_prop_set_uint32(armv7m, "num-irq", 240);
@@ -91,6 +95,11 @@ static void s32k358_soc_realize(DeviceState *dev_soc, Error **errp)
     qdev_connect_clock_in(armv7m, "refclk", s->refclk);
     object_property_set_link(OBJECT(&s->armv7m), "memory",
                              OBJECT(get_system_memory()), &error_abort);
+    
+    // Set vtor address to specify the position of the IVT
+    qdev_prop_set_uint32(armv7m, "init-svtor", 0x00400000);
+    qdev_prop_set_uint32(armv7m, "init-nsvtor", 0x00400000);
+
     if (!sysbus_realize(SYS_BUS_DEVICE(&s->armv7m), errp)) {
         return;
     }
@@ -115,7 +124,6 @@ static void s32k358_soc_realize(DeviceState *dev_soc, Error **errp)
         sysbus_connect_irq(busdev, 0, qdev_get_gpio_in(armv7m, uart_irq[i]));
     }
 }
-
 
 static void s32k358_soc_class_init(ObjectClass *klass, void *data)
 {

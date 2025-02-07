@@ -32,8 +32,8 @@ static void nxps32_init(MachineState *machine)
     qdev_connect_clock_in(dev, "sysclk", sysclk);
     sysbus_realize_and_unref(SYS_BUS_DEVICE(dev), &error_fatal);
 
-    armv7m_load_kernel(ARM_CPU(first_cpu), machine->kernel_filename,
-                       0, FLASH_SIZE);
+    armv7m_load_kernel(ARM_CPU(first_cpu), machine->kernel_filename, 0, PFLASH_SIZE);
+    //armv7m_load_kernel(ARM_CPU(first_cpu), machine->kernel_filename, 0, FLASH_SIZE);
 }
 
 static void nxps32_machine_init(MachineClass *mc)

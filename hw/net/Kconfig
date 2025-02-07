@@ -142,6 +142,11 @@ config CAN_SJA1000
     default y if PCI_DEVICES
     select CAN_BUS
 
+config S32K358_CAN
+    bool
+    default y if PCI_DEVICES
+    select CAN_BUS
+
 config CAN_PCI
     bool
     default y if PCI_DEVICES

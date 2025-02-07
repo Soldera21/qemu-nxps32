@@ -3,7 +3,8 @@
 void UART_init( void )
 {
     UART0_BAUDDIV = 16;
-    UART0_CTRL = 1;
+    UART0_CTRL |= (1 << 13);
+    UART0_CTRL |= (1 << 18);
 }
 
 void UART_printf(const char *s) {

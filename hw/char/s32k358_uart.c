@@ -4,6 +4,7 @@
 
 #include "qemu/osdep.h"
 #include "hw/char/s32k358_uart.h"
+#include "hw/char/s32k358_uart_mapping.h" // Map addresses of each register UART
 #include "hw/irq.h"
 #include "hw/qdev-properties.h"
 #include "hw/qdev-properties-system.h"
@@ -14,6 +15,8 @@
 #define STM_UART_ERR_DEBUG 0
 #endif
 
+#define CAN_ID    0x100 // ID del messaggio CAN
+
 #define DB_PRINT_L(lvl, fmt, args...) do { \
     if (STM_UART_ERR_DEBUG >= lvl) { \
         qemu_log("%s: " fmt, __func__, ## args); \
@@ -22,57 +25,103 @@
 
 #define DB_PRINT(fmt, args...) DB_PRINT_L(1, fmt, ## args)
 
-static int s32k358_uart_can_receive(void *opaque)
-{
-    S32K358UartState *s = opaque;
-
-    if (!(s->uart_sr & UART_SR_RXNE)) {
-        return 1;
-    }
-
-    return 0;
-}
-
 static void s32k358_update_irq(S32K358UartState *s)
 {
-    uint32_t mask = s->uart_sr & s->uart_cr1;
+    uint32_t mask = s->uart_stat & s->uart_ctrl;
 
-    if (mask & (UART_SR_TXE | UART_SR_TC | UART_SR_RXNE)) {
+    if (mask & (UART_STAT_TDRE | UART_STAT_TC | UART_STAT_RDRF)) {
         qemu_set_irq(s->irq, 1);
     } else {
         qemu_set_irq(s->irq, 0);
     }
 }
 
+
+static int s32k358_uart_can_receive(void *opaque)
+{
+    S32K358UartState *s = opaque;
+
+    if (!(s->uart_stat & UART_STAT_RDRF)) {
+        return 1;
+    }
+
+    return 0;
+}
+
 static void s32k358_uart_receive(void *opaque, const uint8_t *buf, int size)
 {
     S32K358UartState *s = opaque;
 
-    if (!(s->uart_cr1 & UART_CR1_UE && s->uart_cr1 & UART_CR1_RE)) {
-        /* UART not enabled - drop the chars */
-        DB_PRINT("Dropping the chars\n");
+    fprintf(stderr, "Called uart receive\n");
+    if (!(s->uart_ctrl & UART_CTRL_TE && s->uart_ctrl & UART_CTRL_RE)) {
+        fprintf(stderr, "Drop\n");
         return;
     }
 
-    s->uart_dr = *buf;
-    s->uart_sr |= UART_SR_RXNE;
+    s->uart_data = *buf;
+    //s->uart_dr = *buf;
+    s->uart_stat |= UART_STAT_RDRF;
 
     s32k358_update_irq(s);
 
-    DB_PRINT("Receiving: %c\n", s->uart_dr);
+    DB_PRINT("Receiving: %c\n", s->uart_data);
+    //DB_PRINT("Receiving: %c\n", s->uart_dr);
 }
+
+/*
+static void uart_receive_can_command(void *opaque, void *canPointer) {
+
+    S32K358CanState *c= canPointer;
+    S32K358UartState *s = opaque;
+
+    if (s->uart_stat & UART_STAT_RDRF) {
+        uint8_t cmd = s->uart_data;
+        uint8_t data[2] = {cmd, cmd + 1};
+        flexcan_send(c,CAN_ID, data, 2);
+        fprintf(stderr, "Called CAN\n");
+    }
+}
+*/
 
 static void s32k358_uart_reset(DeviceState *dev)
 {
     S32K358UartState *s = S32K358_UART(dev);
 
-    s->uart_sr = UART_SR_RESET;
-    s->uart_dr = 0x00000000;
-    s->uart_brr = 0x00000000;
-    s->uart_cr1 = 0x00000000;
-    s->uart_cr2 = 0x00000000;
-    s->uart_cr3 = 0x00000000;
-    s->uart_gtpr = 0x00000000;
+    s->uart_verid    = 0x04040007;
+    s->uart_param    = 0x00000404;
+    s->uart_global   = 0x00000000;
+    s->uart_pincfg   = 0x00000000;
+
+    s->uart_baud     = 0x0F000004;
+    s->uart_stat     = 0x00C00000;
+    s->uart_ctrl     = 0x00000000;
+    s->uart_data     = 0x00001000;
+
+    s->uart_match    = 0x00000000;
+    s->uart_modir    = 0x00000000;
+    s->uart_fifo     = 0x00C00033;
+    s->uart_water    = 0x00000000;
+    s->uart_dataro   = 0x00001000;
+    s->uart_mcr      = 0x00000000;
+    s->uart_msr      = 0x00000000;
+    s->uart_reir     = 0x00000000;
+    s->uart_teir     = 0x00000000;
+    s->uart_hdcr     = 0x00000000;
+    s->uart_tocr     = 0x00000000;
+    s->uart_tosr     = 0x0000000F;
+
+    s->uart_timeout0 = 0x00000000;
+    s->uart_timeout1 = 0x00000000;
+    s->uart_timeout2 = 0x00000000;
+    s->uart_timeout3 = 0x00000000;
+
+    for (int i = 0; i < 128; i++) {
+        s->uart_tcbr[i] = 0x00000000;
+    }
+
+    for (int i = 0; i < 192; i++) {
+        s->uart_tdbr[i] = 0x00000000;
+    }
 
     s32k358_update_irq(s);
 }
@@ -86,27 +135,21 @@ static uint64_t s32k358_uart_read(void *opaque, hwaddr addr,
     DB_PRINT("Read 0x%"HWADDR_PRIx"\n", addr);
 
     switch (addr) {
-    case UART_SR:
-        retvalue = s->uart_sr;
+    case UART_STAT:
+        retvalue = s->uart_stat;
         qemu_chr_fe_accept_input(&s->chr);
         return retvalue;
-    case UART_DR:
-        DB_PRINT("Value: 0x%" PRIx32 ", %c\n", s->uart_dr, (char) s->uart_dr);
-        retvalue = s->uart_dr & 0x3FF;
-        s->uart_sr &= ~UART_SR_RXNE;
+    case UART_DATA:
+        DB_PRINT("Value: 0x%" PRIx32 ", %c\n", s->uart_data, (char) s->uart_data);
+        retvalue = s->uart_data & 0x3FF;
+        s->uart_data &= ~UART_STAT_RDRF;
         qemu_chr_fe_accept_input(&s->chr);
         s32k358_update_irq(s);
         return retvalue;
-    case UART_BRR:
-        return s->uart_brr;
-    case UART_CR1:
-        return s->uart_cr1;
-    case UART_CR2:
-        return s->uart_cr2;
-    case UART_CR3:
-        return s->uart_cr3;
-    case UART_GTPR:
-        return s->uart_gtpr;
+    case UART_BAUD:
+        return s->uart_baud;
+    case UART_CTRL:
+        return s->uart_ctrl;
     default:
         qemu_log_mask(LOG_GUEST_ERROR,
                       "%s: Bad offset 0x%"HWADDR_PRIx"\n", __func__, addr);
@@ -123,49 +166,21 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
     uint32_t value = val64;
     unsigned char ch;
 
-    DB_PRINT("Write 0x%" PRIx32 ", 0x%"HWADDR_PRIx"\n", value, addr);
-
     switch (addr) {
-    case UART_SR:
-        if (value <= 0x3FF) {
-            /* I/O being synchronous, TXE is always set. In addition, it may
-               only be set by hardware, so keep it set here. */
-            s->uart_sr = value | UART_SR_TXE;
-        } else {
-            s->uart_sr &= value;
-        }
-        s32k358_update_irq(s);
+    case UART_STAT:
+        s->uart_stat = value;
         return;
-    case UART_DR:
-        if (value < 0xF000) {
-            ch = value;
-            /* XXX this blocks entire thread. Rewrite to use
-             * qemu_chr_fe_write and background I/O callbacks */
-            qemu_chr_fe_write_all(&s->chr, &ch, 1);
-            /* XXX I/O are currently synchronous, making it impossible for
-               software to observe transient states where TXE or TC aren't
-               set. Unlike TXE however, which is read-only, software may
-               clear TC by writing 0 to the SR register, so set it again
-               on each write. */
-            s->uart_sr |= UART_SR_TC;
-            s32k358_update_irq(s);
-        }
+    case UART_DATA:
+        //parity= value & (1 << 14);
+        ch = value & 0xFF; // We take the first 8bits of the data register
+        qemu_chr_fe_write_all(&s->chr, &ch, 1);
+        s->uart_stat |= UART_STAT_TC;
         return;
-    case UART_BRR:
-        s->uart_brr = value;
+    case UART_BAUD:
+        s->uart_baud = value;
         return;
-    case UART_CR1:
-        s->uart_cr1 = value;
-        s32k358_update_irq(s);
-        return;
-    case UART_CR2:
-        s->uart_cr2 = value;
-        return;
-    case UART_CR3:
-        s->uart_cr3 = value;
-        return;
-    case UART_GTPR:
-        s->uart_gtpr = value;
+    case UART_CTRL:
+        s->uart_ctrl |= value;
         return;
     default:
         qemu_log_mask(LOG_GUEST_ERROR,
@@ -189,7 +204,6 @@ static void s32k358_uart_init(Object *obj)
     S32K358UartState *s = S32K358_UART(obj);
 
     sysbus_init_irq(SYS_BUS_DEVICE(obj), &s->irq);
-
     memory_region_init_io(&s->mmio, obj, &s32k358_uart_ops, s,
                           TYPE_S32K358_UART, 0x400);
     sysbus_init_mmio(SYS_BUS_DEVICE(obj), &s->mmio);
@@ -209,8 +223,8 @@ static void s32k358_uart_class_init(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
 
     dc->reset = s32k358_uart_reset;
-    device_class_set_props(dc, s32k358_uart_properties);
     dc->realize = s32k358_uart_realize;
+    device_class_set_props(dc, s32k358_uart_properties);
 }
 
 static const TypeInfo s32k358_uart_info = {

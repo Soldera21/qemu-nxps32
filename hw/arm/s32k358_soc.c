@@ -17,6 +17,10 @@ static const uint32_t uart_addr[STM_NUM_UARTS] = { 0x40328000, 0x4032C000, 0x403
 
 static const int uart_irq[STM_NUM_UARTS] = { 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172 };
 
+static const uint32_t can_addr=0x40304000;
+
+static const int can_irq=109;
+
 static void s32k358_soc_initfn(Object *obj)
 {
     S32K358State *s = S32K358_SOC(obj);
@@ -30,6 +34,8 @@ static void s32k358_soc_initfn(Object *obj)
         object_initialize_child(obj, "uart[*]", &s->uart[i],
                                 TYPE_S32K358_UART);
     }
+
+    object_initialize_child(obj, "can",&s->can, TYPE_S32K358_CAN);
 
     s->sysclk = qdev_init_clock_in(DEVICE(s), "sysclk", NULL, NULL, 0);
     s->refclk = qdev_init_clock_in(DEVICE(s), "refclk", NULL, NULL, 0);
@@ -123,6 +129,16 @@ static void s32k358_soc_realize(DeviceState *dev_soc, Error **errp)
         sysbus_mmio_map(busdev, 0, uart_addr[i]);
         sysbus_connect_irq(busdev, 0, qdev_get_gpio_in(armv7m, uart_irq[i]));
     }
+
+    // Attach CAN
+    dev = DEVICE(&(s->can));
+    //qdev_prop_set_chr(dev, "chardev", serial_hd(i));
+    if (!sysbus_realize(SYS_BUS_DEVICE(&s->can), errp)) {
+        return;
+    }
+    busdev = SYS_BUS_DEVICE(dev);
+    sysbus_mmio_map(busdev, 0, can_addr);
+    sysbus_connect_irq(busdev, 0, qdev_get_gpio_in(armv7m, can_irq));
 }
 
 static void s32k358_soc_class_init(ObjectClass *klass, void *data)

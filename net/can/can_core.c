@@ -30,8 +30,19 @@
 #include "qemu/module.h"
 #include "qemu/sockets.h"
 #include "qapi/error.h"
+#include "hw/hw.h"
 #include "net/can_emu.h"
 #include "qom/object_interfaces.h"
+#include <stdio.h>
+
+#include <sys/ioctl.h>
+#include <net/if.h>
+#include <linux/can.h>
+#include <linux/can/raw.h>
+#define NUM_FILTER        4
+#define CAN_READ_BUF_LEN  5
+
+static QTAILQ_HEAD(, CanBusState) can_buses = QTAILQ_HEAD_INITIALIZER(can_buses);
 
 /* CAN DLC to real data length conversion helpers */
 
@@ -69,11 +80,47 @@ uint8_t can_len2dlc(uint8_t len)
     return len2dlc[len];
 }
 
+
 struct CanBusState {
     Object object;
+    char * name;
 
     QTAILQ_HEAD(, CanBusClientState) clients;
+    QTAILQ_ENTRY(CanBusState) next;
 };
+
+CanBusState *can_bus_find_by_name(const char *name, bool create_missing)
+{
+    CanBusState *bus;
+
+    if (name == NULL) {
+        name = "canbus";
+    }
+
+    QTAILQ_FOREACH(bus, &can_buses, next) {
+        if (!strcmp(bus->name, name)) {
+            return bus;
+            fprintf(stderr,"Returned bus\n");
+        }
+    }
+    
+    if (!create_missing) {
+        return 0;
+    }
+
+    bus = g_malloc0(sizeof(*bus));
+    if (bus == NULL) {
+        return NULL;
+    }
+
+    QTAILQ_INIT(&bus->clients);
+    fprintf(stderr,"Created new bus\n");
+
+    bus->name = g_strdup(name);
+
+    QTAILQ_INSERT_TAIL(&can_buses, bus, next);
+    return bus;
+}
 
 static void can_bus_instance_init(Object *object)
 {

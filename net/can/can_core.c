@@ -160,10 +160,6 @@ ssize_t can_bus_client_send(CanBusClientState *client,
 
     QTAILQ_FOREACH(peer, &bus->clients, next) {
         if (peer->info->can_receive(peer)) {
-            if (peer == client) {
-                /* No loopback support for now */
-                continue;
-            }
             if (peer->info->receive(peer, frames, frames_cnt) > 0) {
                 ret = 1;
             }

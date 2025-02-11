@@ -14,17 +14,11 @@
 #include <stdio.h>
 
 
-#define CAN_TX_MB 0  // Mailbox 0 per TX
-#define CAN_RX_MB 1  // Mailbox 1 per RX
-#define CAN_ID    0x100 // ID del messaggio CAN
-
-
 static void s32k358_update_irq(S32K358CanState *s)
 {
     uint32_t mask = (s->iflag1 & s->imask1) | (s->iflag2 & s->imask2) | (s->iflag3 & s->imask3);
 
     if (mask) {
-        fprintf(stderr,"Entered\n");
         qemu_set_irq(s->irq, 1);
     } else {
         qemu_set_irq(s->irq, 0);
@@ -78,7 +72,6 @@ static void buff2frame_bas(const uint8_t *buff, qemu_can_frame *frame)
 
     for (i = 0; i < frame->can_dlc; i++) {
         frame->data[i] = buff[8 + i];
-        fprintf(stderr,"Data? %d\n",buff[8+i]);
     }
     for (; i < 64; i++) {
         frame->data[i] = 0;
@@ -88,21 +81,8 @@ static void buff2frame_bas(const uint8_t *buff, qemu_can_frame *frame)
 
 
 /*
-int FlexCAN_Receive(CANFrame *frame) {
-    if (FLEXCAN->iflag1 & (1 << 9)) {
-        frame->id = FLEXCAN->can_data;
-        frame->length = (FLEXCAN->can_data & 0xF);
-        for (int i = 0; i < frame->length; i++) {
-            frame->data[i] = ((uint8_t *)&FLEXCAN->can_data)[i];
-        }
-        FLEXCAN->iflag1 |= (1 << 9); // Cancella il flag di ricezione
-        return 1;
-    }
-    return 0;
-}
-*/
-
-/*
+#define CAN_ID    0x100 // ID del messaggio CAN
+#define CAN_RX_MB 1  // Mailbox 1 per RX
 static void flexcan_init(Object *obj) {
 
     S32K358CanState *s = S32K358_CAN(obj);
@@ -130,48 +110,43 @@ static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned in
 
     switch (addr){
         case CAN_MCR_OFFSET:
-            if (0x01 & val64){ // We launch the transmission (!! We should check which is the value to send that data !!)
-                buff2frame_bas(s->can_data, &frame); // Save it inside the frame
+            // We launch the transmission
+            
+            // The first 16 bit of val64 are the id
+            s->can_data[6] = (val64 & 0x3F) << 2; 
+            s->can_data[7] = (val64 >> 6) & 0x1F;  
+            // Other 4 bits shifted of 16 is the dlc
+            s->can_data[2] = ((val64 >> 16) & 0x0F);
+            
 
-                fprintf(stderr, "I have entered in the buff of the frame \n");
+            buff2frame_bas(s->can_data, &frame); // Save it inside the frame
 
-                s->esr1 &= ~(1 << 6);
+            s->esr1 &= ~(1 << 6);
 
-                ssize_t daa=can_bus_client_send(&s->bus_client, &frame, 1);
+            can_bus_client_send(&s->bus_client, &frame, 1);
 
-                fprintf(stderr, "I have passed the bus_send %ld\n",daa);
+            s->esr1 |= (1 << 6);
 
-                s->esr1 |= (1 << 6);
+            s->iflag1 |= (1 << 2);
 
-                s->iflag1 |= (1 << 2);
+            s->imask1 |= (1 << 2);
 
-                s->imask1 |= (1 << 2);
+            // We reset the value index, used to index at which point of array we arrived with storing the data
+            s->index_can_data=0;
 
-                s32k358_update_irq(s);
-            }else if (0x02 & val64){
-
-                frame.can_dlc=0;
-                frame.can_id=1;
-
-                fprintf(stderr, "Why here \n");
-
-            }
+            s32k358_update_irq(s);
             return;
 
-        case CAN_DATA ... CAN_DATA+44:
+        case CAN_DATA:
 
             // We take the value and store in the buffer (such as ID, flags, dlc and data)
             
             uint8_t value = val64 & 0xFF; // We take the first 8bits of the data register
-            fprintf(stderr, "Value %d\n",value);
+            fprintf(stderr, "Value %d, Index:%d\n",value,s->index_can_data);
 
-            uint32_t index=addr-CAN_DATA+8;
+            s->can_data[s->index_can_data+8]=value;
 
-            fprintf(stderr,"Index:%d\n",index);
-
-            s->can_data[index]=value;
-
-            fprintf(stderr,"Value inserted:%d\n",s->can_data[index]);
+            s->index_can_data=(s->index_can_data+1)%44;
 
             return;
         default:
@@ -182,55 +157,39 @@ static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned in
 
 
 }
-/*
-void flexcan_send( void *opaque ,uint32_t id, uint8_t *data, uint8_t length) {
 
-    S32K358CanState *s = opaque;
-
-    fprintf(stderr, "Entered Send\n");
-
-    s->rxmir[CAN_TX_MB] = 0x00000000;
-    s->rxfgmask = (id << 18);
-    for (uint8_t i = 0; i < length; i++) {
-        s->rxmir[CAN_TX_MB + i] = data[i];
-        fprintf(stderr, "Data: %d\n",data[i]);
-    }
-    s->rxfgmask |= (1 << 24) | (length << 16);
-}
-*/
 
 static uint64_t flexcan_read(void *opaque, hwaddr addr, unsigned int size) {
 
     S32K358CanState *s = opaque;
-    uint64_t temp = 0;
-
-    fprintf(stderr,"Entered in the read\n");
+    uint32_t temp = 0;
 
     switch (addr) {
     case CAN_DATA ... CAN_DATA+44:
-        uint32_t index=addr-CAN_DATA;
-        temp = s->rx_can_data[index];
+        if(s->index_limit_rx_data==0){
+            fprintf(stderr,"Error related to can_receive\n");
+            return -1;
+        }
+        temp = s->rx_can_data[s->index_rx_can_data+8];
+        s->index_rx_can_data=(s->index_rx_can_data+1)%s->index_limit_rx_data;
+        fprintf(stderr,"Read value:%d\n",temp);
         break;
     case IFLAG1_OFFSET:
         temp = s->iflag1;
-        fprintf(stderr,"Entered flag1\n");
         break;
     default:
         temp = 0xff;
         break;
     }
-
     return temp;
 }
 
 
 
 // Funzione di gestione dell'interrupt CAN (ad esempio, ricezione dei messaggi)
-static bool s32k358_can_can_receive(CanBusClientState *client) {
+bool s32k358_can_can_receive(CanBusClientState *client) {
 
     S32K358CanState *s = container_of(client, S32K358CanState, bus_client);
-
-    fprintf(stderr,"Entered in the can_can_receive\n");
 
     if ((s->mcr & (1 << 31)) &&  // MDIS (bit 31)
         (s->mcr & (1 << 30)) &&  // FRZ (bit 30)
@@ -243,15 +202,14 @@ static bool s32k358_can_can_receive(CanBusClientState *client) {
 }
 
 // Funzione di ricezione dei messaggi CAN
-static ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frames, size_t frames_cnt) {
-    fprintf(stderr,"PORCODIO\n");
+ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frames, size_t frames_cnt) {
     S32K358CanState *s = container_of(client, S32K358CanState, bus_client);
     static uint8_t rcv[BUFF_SIZE];
     int i;
     int ret = -1;
     const qemu_can_frame *frame = frames;
-
-    fprintf(stderr,"Entered in the can_receive\n");
+    s->index_limit_rx_data=0;
+    s->index_rx_can_data=0;
 
     // We check the number of frames received
     if (frames_cnt <= 0) {
@@ -262,6 +220,7 @@ static ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_fra
     s->esr1 |= (1 << 3);
 
     ret = frame2buff_bas(frame, rcv);
+    s->index_limit_rx_data=ret-8; // I want the limit index of only data byte.
 
     if (ret < 0) {
         s->esr1 &= ~(1 << 3);
@@ -293,12 +252,6 @@ static ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_fra
 }
 
 
-/*
-static Property s32k358_can_properties[] = {
-    DEFINE_PROP_CHR("chardev", S32K358CanState, chr),
-    DEFINE_PROP_END_OF_LIST(),
-};
-*/
 
 
 
@@ -331,7 +284,6 @@ static int can_connect_to_bus(S32K358CanState *s, CanBusState *bus)
     s->bus_client.info = &can_bus_client_info; // We connect the client to the structure of "receive" and "can receive"
 
     if (!bus) {
-        fprintf(stderr,"Entered busEEE\n");
         return -EINVAL;
     }
 
@@ -345,7 +297,6 @@ static int can_connect_to_bus(S32K358CanState *s, CanBusState *bus)
 // Initialitation of CAN device
 static void s32k358_can_init(Object *obj) {
     S32K358CanState *s = S32K358_CAN(obj);
-    fprintf(stderr,"Second\n");
 
     
     object_property_add_link(obj, "canbus", TYPE_CAN_BUS,
@@ -395,12 +346,15 @@ static void s32k358_can_reset(DeviceState *dev)
     s->erfier     = 0x00000000;
     s->erfsr      = 0x00000000;    
 
+    s->index_can_data=0;
+    s->index_rx_can_data=0;
+
     s32k358_update_irq(s);
 }
 
 // Funzione di realizzazione del dispositivo CAN
 static void s32k358_can_realize(DeviceState *dev, Error **errp) {
-    fprintf(stderr,"First\n");
+
     S32K358CanState *s = S32K358_CAN(dev);
 
     s->canbus=can_bus_find_by_name(NULL, true);
@@ -425,16 +379,6 @@ static void s32k358_can_realize(DeviceState *dev, Error **errp) {
         return;
     }
 }
-
-/*
-static void s32k358_can_exit(DeviceState *dev) {
-    S32K358CanState *s = S32K358_CAN(dev);
-
-    can_bus_remove_client(&s->bus_client);
-
-    qemu_free_irq(s->irq);
-}
-*/
 
 // Funzione di inizializzazione della classe del dispositivo CAN
 static void s32k358_can_class_init(ObjectClass *klass, void *data) {

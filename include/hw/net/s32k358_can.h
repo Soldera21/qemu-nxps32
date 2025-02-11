@@ -27,7 +27,10 @@ typedef struct {
     /* NEW CAN*/
 
     uint8_t can_data[BUFF_SIZE];          // Data register
+    uint8_t index_can_data;
     uint8_t rx_can_data[BUFF_SIZE];
+    uint8_t index_rx_can_data;
+    uint8_t index_limit_rx_data;
 
     uint32_t mcr;         // MCR Register Offset  
     uint32_t ctrl1;       // CTRL1 Register Offset  
@@ -83,5 +86,8 @@ typedef struct {
     CanBusState *canbus;
 } S32K358CanState;
 
+
+bool s32k358_can_can_receive(CanBusClientState *client);
+ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frames, size_t frames_cnt);
 
 #endif /* HW_S32K358_CAN_H */

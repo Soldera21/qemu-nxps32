@@ -1,0 +1,10 @@
+-c
+-x assembler-with-cpp
+-g3
+-mcpu=cortex-m7
+-mthumb
+-mlittle-endian
+-mfloat-abi=hard
+-mfpu=fpv5-sp-d16
+-specs=nano.specs
+-specs=nosys.specs

@@ -1,9 +1,8 @@
 #include "uart.h"
 
-void UART_init( void )
-{
+void UART_init(void) {
     /* SET BAUD RATE */
-    UART0_BAUD = 16;
+    UART0_BAUDDIV = 16;
 
     /* ENABLE UART TRANSMITTER */
     UART0_CTRL |= (1 << 19);
@@ -17,9 +16,7 @@ void UART_init( void )
 
 
 void UART_printf(const char *s) {
-
     while(*s != '\0') {
-
         UART0_DATA = (unsigned int)(*s);
         s++;
     }

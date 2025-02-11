@@ -13,7 +13,6 @@
 #include "net/can_emu.h"
 #include <stdio.h>
 
-
 static void s32k358_update_irq(S32K358CanState *s)
 {
     uint32_t mask = (s->iflag1 & s->imask1) | (s->iflag2 & s->imask2) | (s->iflag3 & s->imask3);
@@ -53,7 +52,6 @@ static int frame2buff_bas( const qemu_can_frame *frame, uint8_t *buff)
 
 static void buff2frame_bas(const uint8_t *buff, qemu_can_frame *frame)
 {
-
     uint8_t i;
 
     frame->flags = 0;
@@ -78,8 +76,6 @@ static void buff2frame_bas(const uint8_t *buff, qemu_can_frame *frame)
     }
 }
 
-
-
 /*
 #define CAN_ID    0x100 // ID del messaggio CAN
 #define CAN_RX_MB 1  // Mailbox 1 per RX
@@ -101,7 +97,6 @@ static void flexcan_init(Object *obj) {
     //NVIC_EnableIRQ(CAN0_ORed_IRQn);
 }
 */
-
 
 static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned int size){
 
@@ -142,7 +137,7 @@ static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned in
             // We take the value and store in the buffer (such as ID, flags, dlc and data)
             
             uint8_t value = val64 & 0xFF; // We take the first 8bits of the data register
-            fprintf(stderr, "Value %d, Index:%d\n",value,s->index_can_data);
+            //fprintf(stderr, "Value %d, Index:%d\n",value,s->index_can_data);
 
             s->can_data[s->index_can_data+8]=value;
 
@@ -154,10 +149,7 @@ static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned in
                       "%s: Bad offset 0x%"HWADDR_PRIx"\n", __func__, addr);
 
     }
-
-
 }
-
 
 static uint64_t flexcan_read(void *opaque, hwaddr addr, unsigned int size) {
 
@@ -172,7 +164,6 @@ static uint64_t flexcan_read(void *opaque, hwaddr addr, unsigned int size) {
         }
         temp = s->rx_can_data[s->index_rx_can_data+8];
         s->index_rx_can_data=(s->index_rx_can_data+1)%s->index_limit_rx_data;
-        fprintf(stderr,"Read value:%d\n",temp);
         break;
     case IFLAG1_OFFSET:
         temp = s->iflag1;
@@ -183,8 +174,6 @@ static uint64_t flexcan_read(void *opaque, hwaddr addr, unsigned int size) {
     }
     return temp;
 }
-
-
 
 // Funzione di gestione dell'interrupt CAN (ad esempio, ricezione dei messaggi)
 bool s32k358_can_can_receive(CanBusClientState *client) {
@@ -251,23 +240,6 @@ ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *fra
     return 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 static const MemoryRegionOps s32k358_can_ops = {
     .read = flexcan_read,
     .write = flexcan_write,
@@ -304,7 +276,6 @@ static void s32k358_can_init(Object *obj) {
                              qdev_prop_allow_set_link_before_realize,
                              0);
 }
-
 
 static void s32k358_can_reset(DeviceState *dev)
 {

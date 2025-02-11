@@ -114,7 +114,6 @@ CanBusState *can_bus_find_by_name(const char *name, bool create_missing)
     }
 
     QTAILQ_INIT(&bus->clients);
-    fprintf(stderr,"Created new bus\n");
 
     bus->name = g_strdup(name);
 

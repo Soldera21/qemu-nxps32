@@ -1,6 +1,5 @@
 /*
  * S32K358 SoC
- * RIGA 102 address of sysbus ???
  */
 
 #include "qemu/osdep.h"

@@ -10,7 +10,6 @@
 #include "qom/object.h"
 #include "net/can_emu.h"
 
-
 #define TYPE_S32K358_CAN "s32k358-can"
 #define BUFF_SIZE 72
 
@@ -23,8 +22,6 @@ typedef struct {
 
     /* <public> */
     MemoryRegion mmio;
-
-    /* NEW CAN*/
 
     uint8_t can_data[BUFF_SIZE];          // Data register
     uint8_t index_can_data;
@@ -78,14 +75,11 @@ typedef struct {
     uint32_t erfier;            // ERFIER Base Address (Error Frame Interrupt Enable Register)
     uint32_t erfsr;             // ERFSR Base Address (Error Frame Status Register)
 
-
-
     CharBackend chr;
     qemu_irq irq;
     CanBusClientState bus_client;
     CanBusState *canbus;
 } S32K358CanState;
-
 
 bool s32k358_can_can_receive(CanBusClientState *client);
 ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frames, size_t frames_cnt);

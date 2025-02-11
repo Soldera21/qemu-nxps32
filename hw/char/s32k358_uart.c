@@ -50,9 +50,9 @@ static void s32k358_uart_receive(void *opaque, const uint8_t *buf, int size)
 {
     S32K358UartState *s = opaque;
 
-    fprintf(stderr, "Called uart receive\n");
+    //fprintf(stderr, "Called uart receive\n");
     if (!(s->uart_ctrl & UART_CTRL_TE && s->uart_ctrl & UART_CTRL_RE)) {
-        fprintf(stderr, "Drop\n");
+        fprintf(stderr, "Drop chars\n");
         return;
     }
 

@@ -22,4 +22,7 @@ GTAGS
 *.gcov
 Test*/*.o
 Test*/*.elf
-Test*/Output/*
+Test*/*.d
+Test*/Startup_Code/*.o
+Test*/Startup_Code/*.map
+Test*/Startup_Code/*.d

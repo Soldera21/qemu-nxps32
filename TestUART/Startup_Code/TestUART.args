@@ -1,0 +1,14 @@
+-nostartfiles
+--entry=Reset_Handler
+-ggdb3
+-Wl,-Map,"Startup_Code/TestUART.map"
+-mcpu=cortex-m7
+-mthumb
+-mlittle-endian
+-mfloat-abi=hard
+-mfpu=fpv5-sp-d16
+-specs=nano.specs
+-specs=nosys.specs
+-lc
+-lm
+-lgcc

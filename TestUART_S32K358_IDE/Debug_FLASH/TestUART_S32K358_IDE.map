@@ -1,0 +1,866 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                              ./Project_Settings/Startup_Code/startup.o (memset)
+
+Discarded input sections
+
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/exceptions.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x88 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x97b ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0xcc ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x6e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x4c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x94 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0xc8 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x11e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x52 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x22 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x56 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x51 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x103 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x1df ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x7c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000      0x130 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x5f ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x57 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x88 ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000      0x97b ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0xcc ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x6e ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0xa90 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x88 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x97b ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x3a ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0xcc ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x6e ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x4c ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x94 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0xc8 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x11e ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x52 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x16 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x22 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x56 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x51 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x103 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x1df ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x7c ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x130 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x6a ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x5f ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x57 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0xcd9 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000      0x392 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000     0x1517 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00000000       0x50 ./Project_Settings/Startup_Code/system.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .debug_macro   0x00000000      0xa90 ./src/main.o
+ .debug_macro   0x00000000       0x22 ./src/main.o
+ .debug_macro   0x00000000       0x56 ./src/main.o
+ .debug_macro   0x00000000       0x51 ./src/main.o
+ .debug_macro   0x00000000      0x103 ./src/main.o
+ .debug_macro   0x00000000       0x6a ./src/main.o
+ .debug_macro   0x00000000      0x1df ./src/main.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .group         0x00000000        0xc ./src/uart.o
+ .debug_macro   0x00000000      0xa90 ./src/uart.o
+ .debug_macro   0x00000000       0x22 ./src/uart.o
+ .debug_macro   0x00000000       0x56 ./src/uart.o
+ .debug_macro   0x00000000       0x51 ./src/uart.o
+ .debug_macro   0x00000000      0x103 ./src/uart.o
+ .debug_macro   0x00000000       0x6a ./src/uart.o
+ .debug_macro   0x00000000      0x1df ./src/uart.o
+ .debug_macro   0x00000000       0x22 ./src/uart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+int_pflash       0x00400000         0x007d4000
+int_dflash       0x10000000         0x00020000
+int_itcm         0x00000000         0x00008000
+int_dtcm         0x20000000         0x0000f000
+int_stack_dtcm   0x2000f000         0x00001000
+int_sram         0x20400000         0x0007ff00
+int_sram_fls_rsv 0x2047ff00         0x00000100
+int_sram_no_cacheable 0x20480000         0x0003bf00
+int_sram_results 0x204bbf00         0x00000100
+int_sram_shareable 0x204bc000         0x00004000
+ram_rsvd2        0x204c0000         0x00000000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./Project_Settings/Startup_Code/Vector_Table.o
+LOAD ./Project_Settings/Startup_Code/exceptions.o
+LOAD ./Project_Settings/Startup_Code/nvic.o
+LOAD ./Project_Settings/Startup_Code/startup.o
+LOAD ./Project_Settings/Startup_Code/startup_cm7.o
+LOAD ./Project_Settings/Startup_Code/system.o
+LOAD ./src/main.o
+LOAD ./src/uart.o
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+START GROUP
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+                0x00002000                HEAP_SIZE = DEFINED (__heap_size__)?__heap_size__:0x2000
+                0x2040ffff                __STANDBY_RAM_LIMIT_END = 0x2040ffff
+
+.pflash         0x00400000      0xb84
+                0x00400000                . = ALIGN (0x2000)
+                0x00400000                __text_start = .
+                0x00400000                __interrupts_init_start = .
+ *(.intc_vector)
+ .intc_vector   0x00400000      0x408 ./Project_Settings/Startup_Code/Vector_Table.o
+                0x00400000                VTABLE
+                0x00400408                . = ALIGN (0x4)
+                0x00400408                __interrupts_init_end = .
+ *(.core_loop)
+ .core_loop     0x00400408        0xc ./Project_Settings/Startup_Code/startup_cm7.o
+                0x00400408                _core_loop
+                0x00400414                . = ALIGN (0x4)
+ *(.startup)
+ *fill*         0x00400414        0xc 
+ .startup       0x00400420      0x204 ./Project_Settings/Startup_Code/startup_cm7.o
+                0x00400420                Reset_Handler
+                0x00400420                _start
+                0x004005a4                MCAL_LTB_TRACE_OFF
+                0x004005a6                _end_of_eunit_test
+                0x00400624                . = ALIGN (0x4)
+ *(.systeminit)
+                0x00400624                . = ALIGN (0x4)
+ *(.text.startup)
+ .text.startup  0x00400624       0x14 ./src/main.o
+                0x00400624                main
+                0x00400638                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00400638        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+ .text          0x00400638        0x0 ./Project_Settings/Startup_Code/exceptions.o
+ .text          0x00400638        0x0 ./Project_Settings/Startup_Code/nvic.o
+ .text          0x00400638        0x0 ./Project_Settings/Startup_Code/startup.o
+ .text          0x00400638        0x0 ./Project_Settings/Startup_Code/startup_cm7.o
+ .text          0x00400638       0x10 ./Project_Settings/Startup_Code/system.o
+                0x00400638                Sys_GetCoreID
+ .text          0x00400648        0x0 ./src/main.o
+ .text          0x00400648       0x3c ./src/uart.o
+                0x00400648                UART_init
+                0x00400670                UART_printf
+ .text          0x00400684        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ *(.text*)
+ .text.memset   0x00400684       0x10 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                0x00400684                memset
+                0x00400694                . = ALIGN (0x4)
+ *(.mcal_text)
+ .mcal_text     0x00400694       0x14 ./Project_Settings/Startup_Code/exceptions.o
+                0x00400694                NMI_Handler
+                0x00400696                HardFault_Handler
+                0x00400698                MemManage_Handler
+                0x0040069a                BusFault_Handler
+                0x0040069c                UsageFault_Handler
+                0x0040069e                SVC_Handler
+                0x004006a0                DebugMon_Handler
+                0x004006a2                PendSV_Handler
+                0x004006a4                SysTick_Handler
+                0x004006a6                undefined_handler
+ .mcal_text     0x004006a8       0x52 ./Project_Settings/Startup_Code/nvic.o
+                0x004006a8                NVIC_SetPriorityGrouping
+                0x004006bc                NVIC_EnableIRQ
+                0x004006d4                NVIC_DisableIRQ
+                0x004006ec                NVIC_SetPriority
+ *fill*         0x004006fa        0x2 
+ .mcal_text     0x004006fc       0xe8 ./Project_Settings/Startup_Code/startup.o
+                0x004006fc                init_data_bss
+                0x00400788                init_data_bss_core2
+ .mcal_text     0x004007e4      0x324 ./Project_Settings/Startup_Code/system.o
+                0x004007e4                startup_go_to_user_mode
+                0x004007e6                default_interrupt_routine
+                0x004007e8                SystemInit
+                0x00400aec                Enable_FPU
+                0x00400b08                . = ALIGN (0x4)
+ *(.acmcu_code_rom)
+                0x00400b08                . = ALIGN (0x4)
+                0x00400b08                __acfls_code_rom_start = .
+ *(.acfls_code_rom)
+                0x00400b08                . = ALIGN (0x4)
+                0x00400b08                __acfls_code_rom_end = .
+                0x00400b08                __acmem_43_infls_code_rom_start = .
+ *(.acmem_43_infls_code_rom)
+                0x00400b08                . = ALIGN (0x4)
+                0x00400b08                __acmem_43_infls_code_rom_end = .
+ *(.init)
+                0x00400b08                . = ALIGN (0x4)
+ *(.fini)
+                0x00400b08                . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00400b08       0x11 ./src/main.o
+                0x00400b1c                . = ALIGN (0x4)
+ *fill*         0x00400b19        0x3 
+ *(.mcal_const_cfg)
+                0x00400b1c                . = ALIGN (0x4)
+ *(.mcal_const)
+                0x00400b1c                . = ALIGN (0x4)
+                0x00400b1c                __init_table = .
+ *(.init_table)
+ .init_table    0x00400b1c       0x4c ./Project_Settings/Startup_Code/startup_cm7.o
+                0x00400b68                . = ALIGN (0x4)
+                0x00400b68                __zero_table = .
+ *(.zero_table)
+ .zero_table    0x00400b68       0x1c ./Project_Settings/Startup_Code/startup_cm7.o
+
+.glue_7         0x00400b84        0x0
+ .glue_7        0x00400b84        0x0 linker stubs
+
+.glue_7t        0x00400b84        0x0
+ .glue_7t       0x00400b84        0x0 linker stubs
+
+.vfp11_veneer   0x00400b84        0x0
+ .vfp11_veneer  0x00400b84        0x0 linker stubs
+
+.v4_bx          0x00400b84        0x0
+ .v4_bx         0x00400b84        0x0 linker stubs
+
+.iplt           0x00400b84        0x0
+ .iplt          0x00400b84        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+
+.boot_header    0x00400b84      0x100
+ .boot_header   0x00400b84      0x100 ./Project_Settings/Startup_Code/startup_cm7.o
+
+.rel.dyn        0x00400c84        0x0
+ .rel.iplt      0x00400c84        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+                0x00400c84                . = ALIGN (0x4)
+                0x00400c84                __text_end = .
+                0x00400c84                __sram_data_rom = __text_end
+
+.sram_bss       0x20400000       0x84
+                0x20400000                . = ALIGN (0x8)
+                0x20400000                __standby_ram_begin__ = .
+ *(.standby_data)
+                0x20400000                . = ALIGN (0x8)
+                0x20400000                __standby_ram_end__ = .
+                0x20400000                . = ALIGN (0x10)
+                0x20400000                __sram_bss_start = .
+ *(.bss)
+ .bss           0x20400000        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+ .bss           0x20400000        0x0 ./Project_Settings/Startup_Code/exceptions.o
+ .bss           0x20400000        0x0 ./Project_Settings/Startup_Code/nvic.o
+ .bss           0x20400000        0x0 ./Project_Settings/Startup_Code/startup.o
+ .bss           0x20400000        0x0 ./Project_Settings/Startup_Code/startup_cm7.o
+ .bss           0x20400000       0x80 ./Project_Settings/Startup_Code/system.o
+                0x20400000                rbar
+                0x20400040                rasr
+ .bss           0x20400080        0x0 ./src/main.o
+ .bss           0x20400080        0x0 ./src/uart.o
+ .bss           0x20400080        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ *(.bss*)
+                0x20400080                . = ALIGN (0x10)
+ *(.mcal_bss)
+ .mcal_bss      0x20400080        0x4 ./Project_Settings/Startup_Code/system.o
+                0x20400080                RESET_CATCH_CORE
+                0x20400084                . = ALIGN (0x4)
+                0x20400084                __sram_bss_end = .
+
+.sram_data      0x20400084        0x0 load address 0x00400c84
+                0x20400084                . = ALIGN (0x4)
+                0x20400084                __sram_data_begin__ = .
+                0x20400084                . = ALIGN (0x4)
+ *(.ramcode)
+                0x20400084                . = ALIGN (0x4)
+ *(.data)
+ .data          0x20400084        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+ .data          0x20400084        0x0 ./Project_Settings/Startup_Code/exceptions.o
+ .data          0x20400084        0x0 ./Project_Settings/Startup_Code/nvic.o
+ .data          0x20400084        0x0 ./Project_Settings/Startup_Code/startup.o
+ .data          0x20400084        0x0 ./Project_Settings/Startup_Code/startup_cm7.o
+ .data          0x20400084        0x0 ./Project_Settings/Startup_Code/system.o
+ .data          0x20400084        0x0 ./src/main.o
+ .data          0x20400084        0x0 ./src/uart.o
+ .data          0x20400084        0x0 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ *(.data*)
+                0x20400084                . = ALIGN (0x4)
+ *(.mcal_data)
+                0x20400084                . = ALIGN (0x4)
+                0x20400084                __sram_data_end__ = .
+                0x00400c84                __sram_data_rom_end = (__sram_data_rom + (__sram_data_end__ - __sram_data_begin__))
+
+.heap           0x20400084     0x2000 load address 0x00400c84
+                0x00000000                . = (. + ALIGN (0x4))
+                0x20400084                _end = .
+                0x20400084                end = .
+                0x20400084                _heap_start = .
+                0x00002000                . = (. + HEAP_SIZE)
+ *fill*         0x20400084     0x2000 
+                0x20402084                _heap_end = .
+
+.acfls_code_ram
+                0x2047ff00        0x0
+                0x2047ff00                __acfls_code_ram_start = .
+ *(.acfls_code_ram)
+                0x2047ff00                __acfls_code_ram_end = .
+                0x2047ff00                __acmem_43_infls_code_ram_start = .
+ *(.acmem_43_infls_code_ram)
+                0x2047ff00                __acmem_43_infls_code_ram_end = .
+                0x00400c84                __non_cacheable_data_rom = __sram_data_rom_end
+
+.non_cacheable_data
+                0x20480000        0x4 load address 0x00400c84
+                0x20480000                . = ALIGN (0x4)
+                0x20480000                __non_cacheable_data_start__ = .
+ *(.mcal_data_no_cacheable)
+                0x20480000                . = ALIGN (0x4)
+ *(.mcal_const_no_cacheable)
+                0x20480000                . = ALIGN (0x4)
+                0x20480000                HSE_LOOP_ADDR = .
+                0x20480000        0x4 LONG 0x0
+                0x20480004                __non_cacheable_data_end__ = .
+                0x00400c88                __non_cacheable_data_rom_end = (__non_cacheable_data_rom + (__non_cacheable_data_end__ - __non_cacheable_data_start__))
+
+.igot.plt       0x20480004        0x0 load address 0x00400c88
+ .igot.plt      0x20480004        0x0 ./Project_Settings/Startup_Code/Vector_Table.o
+
+.non_cacheable_bss
+                0x20480004        0xc load address 0x00400c88
+                0x20480010                . = ALIGN (0x10)
+ *fill*         0x20480004        0xc 
+                0x20480010                __non_cacheable_bss_start = .
+ *(.mcal_bss_no_cacheable)
+                0x20480010                . = ALIGN (0x4)
+                0x20480010                __non_cacheable_bss_end = .
+
+.int_results    0x204bbf00      0x100
+                0x204bbf00                . = ALIGN (0x4)
+ *(.int_results)
+                0x204bc000                . = (. + 0x100)
+ *fill*         0x204bbf00      0x100 
+                0x00400c88                __shareable_data_rom = __non_cacheable_data_rom_end
+
+.shareable_data
+                0x204bc000        0x0 load address 0x00400c88
+                0x204bc000                . = ALIGN (0x4)
+                0x204bc000                __shareable_data_start__ = .
+ *(.mcal_shared_data)
+                0x204bc000                . = ALIGN (0x4)
+                0x204bc000                __shareable_data_end__ = .
+                0x00400c88                __shareable_data_rom_end = (__shareable_data_rom + (__shareable_data_end__ - __shareable_data_start__))
+
+.int_vector     0x20000000      0x408
+                0x20000000                . = ALIGN (0x800)
+                0x20000000                __interrupts_ram_start = .
+                0x20000408                . = (. + (__interrupts_init_end - __interrupts_init_start))
+ *fill*         0x20000000      0x408 
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __interrupts_ram_end = .
+                0x00400c88                __tcm_data_rom = __shareable_data_rom_end
+
+.data_tcm_data  0x20000408        0x0 load address 0x00400c88
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_data_start__ = .
+ *(.dtcm_data*)
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_data_end__ = .
+                0x00400c88                __tcm_data_rom_end = (__tcm_data_rom + (__dtcm_data_end__ - __dtcm_data_start__))
+
+.bss_tcm_data   0x20000408        0x0
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_bss_start__ = .
+ *(.dtcm_bss*)
+                0x20000408                . = ALIGN (0x4)
+                0x20000408                __dtcm_bss_end__ = .
+                0x00400c88                __tcm_code_rom_start = __tcm_data_rom_end
+
+.itcm_text      0x00000000        0x0 load address 0x00400c88
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __itcm_start__ = .
+ *(.itcm_text*)
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __itcm_end__ = .
+                0x00400c88                __tcm_code_rom_end = (__tcm_code_rom_start + (__itcm_end__ - __itcm_start__))
+
+.shareable_bss  0x204bc000        0x0
+                0x204bc000                . = ALIGN (0x10)
+                0x204bc000                __shareable_bss_start = .
+ *(.mcal_shared_bss)
+                0x204bc000                . = ALIGN (0x4)
+                0x204bc000                __shareable_bss_end = .
+                0x2000f000                __Stack_dtcm_end = ORIGIN (int_stack_dtcm)
+                0x20010000                __Stack_dtcm_start = (ORIGIN (int_stack_dtcm) + LENGTH (int_stack_dtcm))
+                0x20400000                __INT_SRAM_START = ORIGIN (int_sram)
+                0x204c0000                __INT_SRAM_END = ORIGIN (ram_rsvd2)
+                0x00000000                __INT_ITCM_START = ORIGIN (int_itcm)
+                0x00008000                __INT_ITCM_END = (ORIGIN (int_itcm) + LENGTH (int_itcm))
+                0x20000000                __INT_DTCM_START = ORIGIN (int_dtcm)
+                0x20010000                __INT_DTCM_END = ((ORIGIN (int_dtcm) + LENGTH (int_dtcm)) + LENGTH (int_stack_dtcm))
+                0x204bc000                __RAM_SHAREABLE_START = __shareable_data_start__
+                0x0000000e                __RAM_SHAREABLE_SIZE = 0xe
+                0x00400c88                __ROM_SHAREABLE_START = __shareable_data_rom
+                0x00400c88                __ROM_SHAREABLE_END = __shareable_data_rom_end
+                0x20480000                __RAM_NO_CACHEABLE_START = __non_cacheable_data_start__
+                0x00000012                __RAM_NO_CACHEABLE_SIZE = 0x12
+                0x00400c84                __ROM_NO_CACHEABLE_START = __non_cacheable_data_rom
+                0x00400c88                __ROM_NO_CACHEABLE_END = __non_cacheable_data_rom_end
+                0x20400084                __RAM_CACHEABLE_START = __sram_data_begin__
+                0x00000013                __RAM_CACHEABLE_SIZE = 0x13
+                0x00400c84                __ROM_CACHEABLE_START = __sram_data_rom
+                0x00400c84                __ROM_CACHEABLE_END = __sram_data_rom_end
+                0x00400000                __ROM_CODE_START = ORIGIN (int_pflash)
+                0x10000000                __ROM_DATA_START = ORIGIN (int_dflash)
+                0x20400000                __BSS_SRAM_START = __sram_bss_start
+                0x20400084                __BSS_SRAM_END = __sram_bss_end
+                0x00000084                __BSS_SRAM_SIZE = (__sram_bss_end - __sram_bss_start)
+                0x20480010                __BSS_SRAM_NC_START = __non_cacheable_bss_start
+                0x00000000                __BSS_SRAM_NC_SIZE = (__non_cacheable_bss_end - __non_cacheable_bss_start)
+                0x20480010                __BSS_SRAM_NC_END = __non_cacheable_bss_end
+                0x204bc000                __BSS_SRAM_SH_START = __shareable_bss_start
+                0x00000000                __BSS_SRAM_SH_SIZE = (__shareable_bss_end - __shareable_bss_start)
+                0x204bc000                __BSS_SRAM_SH_END = __shareable_bss_end
+                0x20000000                __RAM_INTERRUPT_START = __interrupts_ram_start
+                0x00400000                __INIT_INTERRUPT_START = __interrupts_init_start
+                0x00400408                __INIT_INTERRUPT_END = __interrupts_init_end
+                0x00000000                __RAM_ITCM_START = __itcm_start__
+                0x00400c88                __ROM_ITCM_START = __tcm_code_rom_start
+                0x00400c88                __ROM_ITCM_END = __tcm_code_rom_end
+                0x20000408                __RAM_DTCM_DATA_START = __dtcm_data_start__
+                0x00400c88                __ROM_DTCM_DATA_START = __tcm_data_rom
+                0x00400c88                __ROM_DTCM_END = __tcm_data_rom_end
+                0x00400b1c                __INIT_TABLE = __init_table
+                0x00400b68                __ZERO_TABLE = __zero_table
+                0x00000001                __RAM_INIT = 0x1
+                0x00000001                __ITCM_INIT = 0x1
+                0x00000001                __DTCM_INIT = 0x1
+                0x00400b08                Fls_ACEraseRomStart = __acfls_code_rom_start
+                0x00400b08                Fls_ACEraseRomEnd = __acfls_code_rom_end
+                0x00000000                Fls_ACEraseSize = ((__acfls_code_rom_end - __acfls_code_rom_start) / 0x4)
+                0x00400b08                Fls_ACWriteRomStart = __acfls_code_rom_start
+                0x00400b08                Fls_ACWriteRomEnd = __acfls_code_rom_end
+                0x00000000                Fls_ACWriteSize = ((__acfls_code_rom_end - __acfls_code_rom_start) / 0x4)
+                0x2047ff00                _ERASE_FUNC_ADDRESS_ = __acfls_code_ram_start
+                0x2047ff00                _WRITE_FUNC_ADDRESS_ = __acfls_code_ram_start
+                0x00400b08                Mem_43_INFLS_ACEraseRomStart = __acmem_43_infls_code_rom_start
+                0x00400b08                Mem_43_INFLS_ACEraseRomEnd = __acmem_43_infls_code_rom_end
+                0x00000000                Mem_43_INFLS_ACEraseSize = (((__acmem_43_infls_code_rom_end - __acmem_43_infls_code_rom_start) + 0x3) / 0x4)
+                0x00400b08                Mem_43_INFLS_ACWriteRomStart = __acmem_43_infls_code_rom_start
+                0x00400b08                Mem_43_INFLS_ACWriteRomEnd = __acmem_43_infls_code_rom_end
+                0x00000000                Mem_43_INFLS_ACWriteSize = (((__acmem_43_infls_code_rom_end - __acmem_43_infls_code_rom_start) + 0x3) / 0x4)
+                0x2047ff00                _MEM_43_INFLS_ERASE_FUNC_ADDRESS_ = __acmem_43_infls_code_ram_start
+                0x2047ff00                _MEM_43_INFLS_WRITE_FUNC_ADDRESS_ = __acmem_43_infls_code_ram_start
+                0x00400000                __ENTRY_VTABLE = __INIT_INTERRUPT_START
+                0x00400000                __CORE0_VTOR = __INIT_INTERRUPT_START
+                0x00400000                __CORE1_VTOR = __INIT_INTERRUPT_START
+                0x00400000                __CORE2_VTOR = __INIT_INTERRUPT_START
+                0x00400000                __CORE3_VTOR = __INIT_INTERRUPT_START
+                0x00000003                __INDEX_COPY_CORE2 = 0x3
+                0x00000001                ASSERT ((__standby_ram_end__ <= __STANDBY_RAM_LIMIT_END), Memory for standby ram overflow)
+OUTPUT(TestUART_S32K358_IDE.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x30
+ .ARM.attributes
+                0x00000000       0x20 ./Project_Settings/Startup_Code/Vector_Table.o
+ .ARM.attributes
+                0x00000020       0x34 ./Project_Settings/Startup_Code/exceptions.o
+ .ARM.attributes
+                0x00000054       0x34 ./Project_Settings/Startup_Code/nvic.o
+ .ARM.attributes
+                0x00000088       0x34 ./Project_Settings/Startup_Code/startup.o
+ .ARM.attributes
+                0x000000bc       0x1f ./Project_Settings/Startup_Code/startup_cm7.o
+ .ARM.attributes
+                0x000000db       0x34 ./Project_Settings/Startup_Code/system.o
+ .ARM.attributes
+                0x0000010f       0x34 ./src/main.o
+ .ARM.attributes
+                0x00000143       0x34 ./src/uart.o
+ .ARM.attributes
+                0x00000177       0x34 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+
+.comment        0x00000000       0x88
+ .comment       0x00000000       0x88 ./Project_Settings/Startup_Code/exceptions.o
+                                 0x89 (size before relaxing)
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/nvic.o
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/startup.o
+ .comment       0x00000088       0x89 ./Project_Settings/Startup_Code/system.o
+ .comment       0x00000088       0x89 ./src/main.o
+ .comment       0x00000088       0x89 ./src/uart.o
+ .comment       0x00000088       0x89 c:/nxp/s32ds.3.6.0/s32ds/build_tools/gcc_v10.2/gcc-10.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/10.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+
+.debug_info     0x00000000     0x1ad4
+ .debug_info    0x00000000      0x132 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_info    0x00000132      0x765 ./Project_Settings/Startup_Code/nvic.o
+ .debug_info    0x00000897      0x333 ./Project_Settings/Startup_Code/startup.o
+ .debug_info    0x00000bca       0x22 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_info    0x00000bec      0xd54 ./Project_Settings/Startup_Code/system.o
+ .debug_info    0x00001940       0xbf ./src/main.o
+ .debug_info    0x000019ff       0xd5 ./src/uart.o
+
+.debug_abbrev   0x00000000      0x5c4
+ .debug_abbrev  0x00000000       0x47 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_abbrev  0x00000047      0x111 ./Project_Settings/Startup_Code/nvic.o
+ .debug_abbrev  0x00000158      0x11d ./Project_Settings/Startup_Code/startup.o
+ .debug_abbrev  0x00000275       0x12 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_abbrev  0x00000287      0x227 ./Project_Settings/Startup_Code/system.o
+ .debug_abbrev  0x000004ae       0x80 ./src/main.o
+ .debug_abbrev  0x0000052e       0x96 ./src/uart.o
+
+.debug_aranges  0x00000000      0x170
+ .debug_aranges
+                0x00000000       0x68 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_aranges
+                0x00000068       0x38 ./Project_Settings/Startup_Code/nvic.o
+ .debug_aranges
+                0x000000a0       0x28 ./Project_Settings/Startup_Code/startup.o
+ .debug_aranges
+                0x000000c8       0x28 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_aranges
+                0x000000f0       0x40 ./Project_Settings/Startup_Code/system.o
+ .debug_aranges
+                0x00000130       0x20 ./src/main.o
+ .debug_aranges
+                0x00000150       0x20 ./src/uart.o
+
+.debug_ranges   0x00000000      0x130
+ .debug_ranges  0x00000000       0x58 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_ranges  0x00000058       0x28 ./Project_Settings/Startup_Code/nvic.o
+ .debug_ranges  0x00000080       0x18 ./Project_Settings/Startup_Code/startup.o
+ .debug_ranges  0x00000098       0x20 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_ranges  0x000000b8       0x68 ./Project_Settings/Startup_Code/system.o
+ .debug_ranges  0x00000120       0x10 ./src/main.o
+
+.debug_macro    0x00000000    0x5220b
+ .debug_macro   0x00000000      0x151 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000151      0xa90 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000be1       0x88 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00000c69      0x97b ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000015e4       0x3a ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x0000161e       0xcc ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000016ea       0x6e ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001758       0x4c ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000017a4       0x94 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001838       0xc8 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001900      0x11e ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001a1e       0x52 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001a70       0x16 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001a86       0x22 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001aa8       0x56 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001afe       0x51 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001b4f      0x103 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001c52       0x6a ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001cbc      0x1df ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001e9b       0x7c ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00001f17      0x130 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00002047       0x6a ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000020b1       0x5f ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00002110       0x57 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00002167       0x50 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x000021b7       0x50 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_macro   0x00002207      0x41c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00002623     0x5227 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000784a     0x10cd ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00008917     0x10a6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000099bd      0x180 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00009b3d       0xf8 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00009c35      0x370 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00009fa5      0x159 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000a0fe      0xc36 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000ad34     0x2ad5 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000d809      0x2ea ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000daf3       0x8e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0000db81     0xcead ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001aa2e      0xe9d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001b8cb      0xbc7 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001c492      0xd77 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001d209      0xb4d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001dd56       0x5d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001ddb3      0xab9 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001e86c     0x154d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0001fdb9      0x867 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00020620       0xe8 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00020708     0xef45 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0002f64d       0xd6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0002f723      0x106 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0002f829      0x507 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0002fd30      0x779 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000304a9      0xe03 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000312ac      0x93f ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00031beb     0x1125 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00032d10      0x2e6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00032ff6     0x12fd ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000342f3     0x23d5 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000366c8      0x584 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00036c4c      0x450 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003709c     0x1517 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000385b3     0x15d2 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00039b85      0x5b5 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003a13a      0x226 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003a360      0x216 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003a576      0x512 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003aa88       0x78 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003ab00     0x1c7d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003c77d       0x48 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003c7c5      0x23c ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003ca01      0xb27 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003d528      0x311 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003d839       0x95 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003d8ce       0xd6 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003d9a4       0x5e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0003da02     0x914d ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00046b4f      0xf89 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00047ad8      0x10b ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00047be3      0x2e0 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00047ec3       0xcc ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00047f8f       0xb3 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00048042      0x1d0 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00048212      0x56e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00048780     0x1485 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00049c05     0x3d73 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004d978      0x418 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004dd90      0x4ac ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004e23c      0xf43 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x0004f17f     0x1b53 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00050cd2      0xcd9 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x000519ab      0x392 ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00051d3d       0x2e ./Project_Settings/Startup_Code/nvic.o
+ .debug_macro   0x00051d6b       0x6a ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00051dd5      0x23e ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00052013       0x52 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00052065       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x000520b5       0x50 ./Project_Settings/Startup_Code/system.o
+ .debug_macro   0x00052105       0x72 ./src/main.o
+ .debug_macro   0x00052177       0x22 ./src/main.o
+ .debug_macro   0x00052199       0x72 ./src/uart.o
+
+.debug_line     0x00000000     0x23b0
+ .debug_line    0x00000000      0x5e8 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_line    0x000005e8      0xa72 ./Project_Settings/Startup_Code/nvic.o
+ .debug_line    0x0000105a      0x399 ./Project_Settings/Startup_Code/startup.o
+ .debug_line    0x000013f3      0x15c ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_line    0x0000154f      0x9af ./Project_Settings/Startup_Code/system.o
+ .debug_line    0x00001efe      0x242 ./src/main.o
+ .debug_line    0x00002140      0x270 ./src/uart.o
+
+.debug_str      0x00000000   0x2a7d7b
+ .debug_str     0x00000000     0x7f82 ./Project_Settings/Startup_Code/exceptions.o
+                               0x8117 (size before relaxing)
+ .debug_str     0x00007f82   0x29f1ad ./Project_Settings/Startup_Code/nvic.o
+                             0x2a721f (size before relaxing)
+ .debug_str     0x002a712f      0x120 ./Project_Settings/Startup_Code/startup.o
+                               0x508c (size before relaxing)
+ .debug_str     0x002a724f       0x70 ./Project_Settings/Startup_Code/startup_cm7.o
+ .debug_str     0x002a72bf      0x93e ./Project_Settings/Startup_Code/system.o
+                              0x1aadc (size before relaxing)
+ .debug_str     0x002a7bfd      0x170 ./src/main.o
+                               0x3e49 (size before relaxing)
+ .debug_str     0x002a7d6d        0xe ./src/uart.o
+                               0x3e58 (size before relaxing)
+
+.debug_frame    0x00000000      0x21c
+ .debug_frame   0x00000000       0xb0 ./Project_Settings/Startup_Code/exceptions.o
+ .debug_frame   0x000000b0       0x50 ./Project_Settings/Startup_Code/nvic.o
+ .debug_frame   0x00000100       0x54 ./Project_Settings/Startup_Code/startup.o
+ .debug_frame   0x00000154       0x70 ./Project_Settings/Startup_Code/system.o
+ .debug_frame   0x000001c4       0x28 ./src/main.o
+ .debug_frame   0x000001ec       0x30 ./src/uart.o
+
+.debug_loc      0x00000000      0x77b
+ .debug_loc     0x00000000       0xb9 ./Project_Settings/Startup_Code/nvic.o
+ .debug_loc     0x000000b9      0x3b7 ./Project_Settings/Startup_Code/startup.o
+ .debug_loc     0x00000470      0x2cb ./Project_Settings/Startup_Code/system.o
+ .debug_loc     0x0000073b       0x40 ./src/uart.o

@@ -1,4 +1,9 @@
 /*
+ * This file is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+ * https://creativecommons.org/licenses/by-nc/4.0/
+ */
+
+/*
  * S32K358 UART
  */
 
@@ -175,7 +180,7 @@ static const MemoryRegionOps s32k358_uart_ops = {
     .endianness = DEVICE_NATIVE_ENDIAN,
 };
 
-static const Property s32k358_uart_properties[] = {
+static Property s32k358_uart_properties[] = {
     DEFINE_PROP_CHR("chardev", S32K358UartState, chr),
     DEFINE_PROP_END_OF_LIST(),
 };

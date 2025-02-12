@@ -1,4 +1,9 @@
 /*
+ * This file is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+ * https://creativecommons.org/licenses/by-nc/4.0/
+ */
+
+/*
  * S32K358 UART
  */
 
@@ -57,4 +62,5 @@ typedef struct {
     CharBackend chr;
     qemu_irq irq;
 } S32K358UartState;
+
 #endif /* HW_S32K358_UART_H */

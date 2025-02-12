@@ -1,4 +1,9 @@
 /*
+ * This file is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+ * https://creativecommons.org/licenses/by-nc/4.0/
+ */
+
+/*
  * S32K358 SoC
  */
 
@@ -57,9 +62,7 @@ struct S32K358State {
     MemoryRegion itcm;
     MemoryRegion dtcm;
     MemoryRegion p_flash;
-    MemoryRegion p_flash_alias;
     MemoryRegion d_flash;
-    MemoryRegion d_flash_alias;
     MemoryRegion sram0;
     MemoryRegion sram1;
     MemoryRegion sram2;

@@ -1,4 +1,10 @@
 /*
+ * This file is part of the QEMU project. The original code is licensed under the GNU GPL v2.
+ * Modifications in this file are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+ * https://creativecommons.org/licenses/by-nc/4.0/
+ */
+
+/*
  * CAN common CAN bus emulation support
  *
  * Copyright (c) 2013-2014 Jin Yang

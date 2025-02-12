@@ -1,3 +1,7 @@
+# This file is part of the QEMU project. The original code is licensed under the GNU GPL v2.
+# Modifications in this file are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+# https://creativecommons.org/licenses/by-nc/4.0/
+
 # Default configuration for arm-softmmu
 
 # CONFIG_PCI_DEVICES=n

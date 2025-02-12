@@ -1,0 +1,32 @@
+\section{Testing and Validation}
+To ensure the correct operation of the emulated system, we developed multiple applications that implement and test functionalities related to all the modifications we made in QEMU.
+
+
+\subsection{Test Peripheral Initialization}
+
+\begin{itemize}
+    \item \textbf{UART:} Configuration of a UART peripheral for data transmission and reception.
+    \item \textbf{CAN:} Configuration of a CAN peripheral, with two clients attempting to connect to the CAN bus to simulate communication between devices.
+\end{itemize}
+
+
+\subsection{Test Peripheral Functions Implementation}
+
+\paragraph{UART Test}
+
+\begin{itemize}
+    \item Data transmission and reception via UART were implemented to verify that data is correctly exchanged between the microcontroller and an external device.
+    \item Transmission errors were emulated by altering control bits, such as simulating a parity error, to verify the correct error handling mechanism.
+\end{itemize}
+
+\paragraph{CAN Test}
+
+\begin{itemize}
+    \item Data transmission and reception on the CAN bus were implemented, with two clients attempting to interact with the bus to simulate real traffic.
+    \item CAN transmission errors were emulated, such as packet loss or data corruption, by modifying control bits.
+\end{itemize}
+
+
+\subsection{FreeRTOS Functionality Verification}
+To verify the correct operation of FreeRTOS, the application was compiled using the NXP toolchain within the designated IDE. Additionally, several tasks were added, managed by a semaphore, to test the system's multitasking capabilities.
+

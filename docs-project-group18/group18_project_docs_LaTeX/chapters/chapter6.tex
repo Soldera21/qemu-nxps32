@@ -1,0 +1,45 @@
+\section{Development Obstacles}
+
+\subsection{Emulation of the Cortex-M7 Processor from the Provided Tutorial}
+The project began with an analysis of a tutorial provided by the professor \cite{Goehler_QEMU_Architecture}. This resulted in a good starting point, as the associated repository contained a complete implementation of the code to add a new architecture to QEMU. However, the documentation was somewhat brief in certain sections, requiring further investigation to fully understand the process.
+
+During development, it became apparent that the Cortex-M7 core was already integrated into the official QEMU repository, so we referred directly to this implementation. Despite this, the tutorial proved useful in helping us familiarize ourselves with the files and directories structure of QEMU, which was crucial for making subsequent modifications.
+
+
+\subsection{Adapting the Netduino 2 Code for our Board and SoCs}
+For modeling the board, we used the implementation of the Netduino 2 board and its associated SoC, which were already supported in QEMU. The code was adapted to suit our board, with modifications to memory addresses, peripherals, and other parameters specific to the new architecture. This approach allowed us to reuse part of the existing logic, thus optimizing the time required for the initial setup.
+
+Initially, the memory was configured with one block for RAM and one for flash ROM to test the basic functionality of the newly emulated board. Later, it was modified to make it more accurate, as explained in Section \ref{sec:freertos} about FreeRTOS.
+
+
+\subsection{Modification of Configuration/Compilation Files}
+During the compilation phase, several errors related to incorrect build environment configurations emerged. Analyzing the problem then revealed the need to modify environment variables and update configuration files. In particular they were \texttt{Kconfig} and \texttt{meson.build} in the modified directories, to ensure the proper integration of the new emulated board.
+
+This discovery proved valuable in subsequent stages, enabling us to perform successful compilations after integrating the peripherals.
+
+
+\subsection{Implementation of UART and CAN Peripherals}
+During the development of the project, the implementation of the UART and CAN peripherals on the NXP S32K3X8EVB board proved to be one of the most complex challenges. Both peripherals required an in-depth analysis of registers, their mapping, and their specific functionalities, which were often unintuitive and difficult to interpret. Additionally, one of the main difficulties in both cases was understanding the functions interacting with QEMU, particularly those related to device instantiation, register mapping, and the creation of virtual buses.
+
+For UART, we chose to adapt the existing UART device implementation from the Netduino 2 board to our context, as was done earlier for the board and its associated SoC. This decision simplified the task to some extent, as the main functions were already implemented and their interpretation was relatively straightforward.
+
+Implementing the CAN peripheral, however, presented even more significant challenges. Our board uses the FlexCAN, a specific peripheral not natively present in QEMU, which further complicated the interpretation of registers and their functionalities. Unlike the UART, there was no existing base to adapt, forcing us to study in detail the structure of the registers and the operation mechanisms of the CAN.
+
+The greatest challenges with CAN were related to understanding the bus-based and frame-based communication mechanisms and how to correctly implement them in QEMU. These mechanisms are considerably more complex than the simple transmission and reception of data typical of UART. Managing CAN frames, synchronizing messages, and creating the virtual bus required extensive study and multiple implementation attempts to achieve correct behavior.
+
+In summary, while adapting the UART allowed us to proceed more straightforwardly, the implementation of CAN was a much more demanding challenge, highlighting the complexities associated with the lack of direct support in QEMU and the inherently more intricate nature of this peripheral.
+
+
+\subsection{Porting FreeRTOS through the NXP Toolchain}
+Another significant challenge of the project was the porting of FreeRTOS onto the board. The main issue came from the memory mapping used in the emulation files, which was initially inaccurate compared to the real board.
+
+The analysis of the issue revealed that the initial memory mapping reproduced in the emulation was not faithful to the real one, and some areas had been incorrectly represented. As a result, it was necessary to review and partially correct this mapping, properly dividing it into Data Flash and Program Flash for the ROM, as well as ITCM, DTCM, and three regions of SRAM for the RAM. Everything has been deeper explained in Section \ref{sec:components}.
+
+To test the system's functionality, an application was written using a linker script based on the one used with the ARM MPS2 board. This approach allowed us to achieve compilation of a test code. However, this initial attempt resulted in failure due to execution errors, during dynamic memory allocation, with any available configuration in FreeRTOS. The operating system's code turned out to be too complex for manual adaptation to the new emulated platform.
+
+Next, we switched to compiling FreeRTOS using the official NXP toolchain, provided through the dedicated IDE, in order to diagnose and fix the previously encountered issue by using a code we knew to work on the real board. After obtaining the \texttt{elf} file from the compilation, an error occurred during execution, pointing to the presence of the \texttt{boot\_header} and to an incorrect pointer to the first instruction of the Vector Table. At this point, we temporarily removed the \texttt{boot\_header} and set the address of the first instruction of the actual Vector Table in QEMU for the CPU.
+
+The last obstacle encountered was in the startup code, where we commented out a section related to the MSCM clock check, which was not implemented in the emulator and would block execution if left in the code.
+
+Thanks to these corrections, we were able to resolve the compatibility issues, ensuring successful compilation and stable operation of both the FreeRTOS environment and the previously integrated peripherals. However, the issues regarding the initialization and use of the MPU and the placement of the \texttt{boot\_header} through the linker remain unresolved at this time. For the specific MPU problem we tried to map the memory region that causes the HardFault in QEMU to avoid access errors, but without any positive result.
+

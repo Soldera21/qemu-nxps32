@@ -1,0 +1,35 @@
+\section{NXP S32K3X8EVB Board Description}
+
+The \textbf{NXP S32K3X8EVB} \cite{nxp_s32k3x8evb} is an Evaluation Board designed for the development of automotive applications. This board is based on the \textbf{S32K358} microcontroller, which belongs to the \textbf{S32K3} family. It supports applications requiring functional safety, advanced communications, and efficient hardware resource management. The following are some of its key technical specifications.
+
+\subsection{Main Components}
+\label{sec:components}
+
+The \textbf{SoC} that is present in the board is S32K358. It integrates all the main components of the board. On this specific SoC there is a CPU with the following specifications:
+\begin{itemize}
+    \item \textbf{ARM Cortex-M7} CPU 32-bit architecture.
+    \item Maximum frequency: up to \textbf{320 MHz}.
+\end{itemize}
+The \textbf{memory} of this SoC is divided many minor sections that resulted not useful for the purpose of emulation and the following five main sections:
+\begin{itemize}
+    \item Program Flash as \textbf{ROM}: \textbf{8 MB}.
+    \item Data Flash as \textbf{ROM}: \textbf{128 KB}.
+    \item ITCM as \textbf{RAM}: \textbf{32 KB}.
+    \item DTCM as \textbf{RAM}: \textbf{64 KB}.
+    \item \textbf{3 SRAM regions} of \textbf{256 KB} each.
+\end{itemize}
+The board has multiple \textbf{communication interfaces} to interact with sensors and other devices:
+\begin{itemize}
+    \item \textbf{CAN-FD} (Controller Area Network with Flexible Data Rate) for high-speed automotive communication.
+    \item \textbf{UART, SPI, I2C} for standard serial communications.
+\end{itemize}
+
+\subsection{Project Context}
+In the context of this project, we will limit the emulation to the following components:
+\begin{itemize}
+    \item \textbf{SoC S32K358};
+    \item \textbf{ARM Cortex-M7 CPU} (already in Qemu);
+    \item \textbf{Memory} structure emulation;
+    \item \textbf{UART} emulation and communication;
+    \item \textbf{CAN} emulation and communication through CAN bus.
+\end{itemize}

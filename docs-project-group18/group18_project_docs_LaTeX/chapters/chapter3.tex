@@ -1,0 +1,67 @@
+\section{Qemu implementation}
+QEMU \cite{qemu_documentation} is an open-source emulator and virtualizer that allows operating systems and applications to run on different hardware architectures by simulating the hardware environment and peripherals of a machine. For the emulation of the S32K3X8EVB board in this project, the stable-8.2 version of QEMU was used.
+
+
+\subsection{Code Structure in QEMU}
+The QEMU code is organized into modules dedicated to specific components, with configuration and build files. Below is an overview of the main directories involved in our development of the project:
+
+\begin{itemize}
+    \item \texttt{hw/arm/}: Contains the modules needed to simulate ARM architectures and corresponding system-on-chip (SoC) management.
+    \item \texttt{hw/char/}: Manages serial communication interfaces and char devices such as UART (Universal Asynchronous Receiver-Transmitter).
+    \item \texttt{hw/net/can/}: Handles the emulation of the CAN bus (Controller Area Network), used in automotive and industrial applications for communication between devices.
+    \item \texttt{include/hw/}: Contains declarations and mappings for peripherals, defining configuration interfaces and implementation details; in general here we can find all the header files of the QEMU project.
+    \item \texttt{target/arm/tcg/}: It is dedicated to all CPUs emulation, with support for the Cortex-M7 CPU already included in QEMU.
+\end{itemize}
+
+This modular organization facilitates the extension and maintenance of the code, allowing for additions or modifications without impacting the entire system.
+
+
+\subsection{Modifications to QEMU}
+
+To support the S32K3X8EVB board, the following changes were made to the QEMU code, based primarily on the reference manual \cite{nxpS32K3} provided by NXP:
+
+\begin{itemize}
+    \item \textbf{SoC (System on Chip)}: A new file \texttt{s32k358\_soc.c} was added in the \texttt{hw/arm/} directory to define the specifications of the SoC, including the configuration of the CPU and integrated peripherals.
+    \item \textbf{Board NXPS32K3X8EVB}: A new file \texttt{nxps32.c} was added in the \texttt{hw/arm/} directory, which defines the emulated machine based on the Cortex-M7. It handles the initialization of the System Clock, configures the SoC device, connects the system clock, and loads the kernel into flash memory.
+    \item \textbf{UART}: A driver for the SoC-specific UART peripheral was added in the \texttt{hw/char/} directory, enabling serial communication emulation.
+    \item \textbf{CAN}: A new driver for the FlexCAN controller was implemented in the \texttt{hw/net/can/} directory, supporting FlexCAN communication in compliance with automotive standards.
+    \item \textbf{Kconfig}: The \texttt{Kconfig} file in the modified directories was updated to include new configuration entries for the board, SoC, and peripherals.
+    \item \textbf{Meson.build}: The \texttt{meson.build} file in the modified directories was modified to include the new files in the build process, ensuring they are compiled correctly.
+    \item \textbf{New device compilation}: The file \texttt{/configs/devices/arm-softmmu/default.mak} has been edited to enable build only of the new ARM board to simplify the process.
+\end{itemize}
+
+
+\subsection{Emulated Systems and Drivers Description}
+
+\paragraph{CPU (ARM Cortex-M7)}
+QEMU supports the emulation of the ARM Cortex-M7 CPU, which is the main core of the SoC. This support allows the execution of firmware designed for this architecture directly in the emulated environment. Since it is already included in QEMU, it is not needed to implement it by us, but we only have to include it when defining the new board.
+
+\paragraph{S32K358 SoC}
+The S32K358 is an automotive microcontroller from the NXP S32K3 family, based on the ARM Cortex-M7. It is designed for safe and real-time applications, with a focus on functional safety, power management, and advanced connectivity. It includes a rich set of peripherals, including CAN FD and UART interfaces.
+
+\paragraph{Memory}
+The entire memory of the SoC has been emulated, allowing the firmware to interact with memory sections as it would on real hardware. The memory configuration has been taken from an original linker file to understand which sections are absolutely needed in emulation.
+
+\paragraph{UART}
+The UART peripheral has been added in the emulation environment. It is an asynchronous serial communication interface that allows data transmission and reception between devices.\\
+In particular the following registers have been implemented:
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\paragraph{CAN}
+CAN communication has been integrated in emulated board. The CAN peripheral is a robust, real-time communication protocol widely used in automotive applications for connecting devices and sensors. In the emulation, FlexCAN support allows simulation of the management of CAN buses and the transmission of data frames.\\
+In particular the following registers have been implemented:
+\begin{itemize}
+    \item 
+\end{itemize}
+
+
+\subsection{Limitations of Emulation}
+
+\paragraph{Partial Hardware Emulation}
+The first limitation is the partial emulation of hardware functions. For example, we have chosen to provide a complete peripheral mapping but have implemented only the main functionalities of these peripherals, such as transmission, reception, and the operation of only some control bits in specific registers. However, the complete register mapping allows for future code expansion by implementing missing functionalities.
+
+\paragraph{Transmission Errors Emulation}
+A second restriction lies in emulating transmission errors in CAN and UART peripherals. In the QEMU emulation environment, it is challenging to faithfully replicate real-world conditions that cause communication errors. However, we have attempted to recreate these conditions as accurately as possible through testing.
+

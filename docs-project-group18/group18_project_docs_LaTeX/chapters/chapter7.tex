@@ -1,0 +1,14 @@
+\section{Conclusion}
+
+The emulation of the NXP S32K358 board on QEMU provided an opportunity to gain a deeper understanding of how hardware architecture works and the complexities involved in its software implementation. During the development process, several challenges were encountered; they helped to better grasp the functioning of emulation and its interaction with peripherals.
+
+One of the key elements that emerged was the detailed understanding of the board's structure. The correct reproduction of hardware characteristics for basic operation within the emulated environment required a thorough analysis of the technical specifications and documentation provided by the manufacturer. 
+
+A particularly relevant aspect was the process of register mapping, which was essential to ensure faithful emulation behavior. The accurate identification and implementation of memory regions dedicated to peripherals required careful analysis of the technical documentation and meticulous verification through testing and debugging. Inaccurate mapping would have compromised the operation of the emulated peripherals and reduced the overall system's reliability.
+
+Special attention was given to the CAN and UART peripherals, two fundamental components of the board. Emulating the CAN bus required a detailed understanding of its operation, message management, and interfacing logic with the processor. A faithful reproduction of this peripheral demanded careful implementation of the protocol specifications and related control registers. Similarly, emulating the UART involved studying data transmission and reception modes.
+
+Another significant obstacle was the porting of FreeRTOS onto the board. The main difficulties stemmed from the initially inaccurate memory mapping compared to the real board. This required targeted corrections in the memory configuration and startup code, as well as modifications to the vector table address in the CPU initialization to ensure proper operation of the operating system.
+
+Overall, the work undertaken provided a clear and structured view of the S32K358 microcontroller and the challenges associated with its emulation. The experience gained in register mapping, peripheral management, and integration with the QEMU environment represents a valuable body of knowledge for future emulation and embedded development projects.
+

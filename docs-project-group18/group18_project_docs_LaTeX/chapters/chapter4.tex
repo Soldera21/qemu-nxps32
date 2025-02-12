@@ -1,0 +1,34 @@
+\section{FreeRTOS Porting}
+\label{sec:freertos}
+
+FreeRTOS \cite{freertosGitHub} is an open-source real-time operating system designed specifically for microcontrollers and embedded devices. It offers essential features for task management, synchronization, resource management, and inter-process communication, enabling the development of real-time applications with minimal system resources.
+In this development phase, the goal was to port FreeRTOS to the emulated board in QEMU to validate its functionality. This was achieved by using the FreeRTOS code, compiled with the official NXP toolchain, within the dedicated IDE for the S32 platform \cite{NXP_S32DS}. To prepare the compilation environment, the Real-Time Drivers and FreeRTOS expansion packages were integrated into the IDE, allowing us also to leverage pre-tested examples as starting points. After successful compilation in the NXP environment, the \texttt{elf} file was executed in QEMU to test the emulator’s operation.
+
+The memory configuration was carefully replicated, as specified in the NXP linker file and reported in Section \ref{sec:components}.
+
+
+\subsection{Emulation and Configuration}
+The vector table pointer has been configured for the CPU using the instructions
+
+\texttt{qdev\_prop\_set\_uint32(armv7m, "init-svtor", 0x00400000)}
+
+\texttt{qdev\_prop\_set\_uint32(armv7m, "init-nsvtor", 0x00400000)}
+
+\noindent in QEMU. The \texttt{boot\_header} has been removed to directly point to the vector table in the linker file by commenting out:
+
+\texttt{KEEP(*(.boot\_header))}
+
+\noindent This modification allowed for the board to boot and the program to start correctly.
+
+To avoid an infinite loop during startup, a procedure that checked the MSCM clock was removed, as this functionality wasn’t implemented in the emulation. The relevant section of the code was simply commented out in file \texttt{startup\_cm7.s} in the startup code of the test application.
+
+Additionally, the \textbf{MPU (Memory Protection Unit)} was causing a HardFault and entering an infinite loop when attempting to access a non-mapped memory area in QEMU. This was temporarily resolved by commenting on the following line:
+
+\texttt{S32\_MPU->CTRL |= (S32\_MPU\_CTRL\_ENABLE\_MASK | S32\_MPU\_CTRL\_HFNMIENA\_MASK)}
+
+\noindent This action disables the MPU, enabling the necessary test operations. This workaround remains in place until a permanent solution for the correct MPU operation and mapping of memory regions belonging to peripherals is found.
+
+
+\subsection{Results}
+
+After applying the aforementioned minor corrections to the original FreeRTOS example code provided by NXP, along with fixing the memory errors incorrectly implemented during the early stages of emulation, \textbf{FreeRTOS now functions correctly} on the emulated board.

@@ -31,48 +31,29 @@ static void s32k358_update_irq(S32K358CanState *s)
 
 static int frame2buff_bas( const qemu_can_frame *frame, uint8_t *buff)
 {
-    int i;
-    int dlen = frame->can_dlc;
-
-    if (dlen > 8) {
-        return -1;
-    }
-
-    buff[6] = (frame->can_id << 2) & 0xFC;
+    uint8_t len = frame->can_dlc;
+    buff[2] = (buff[2] & 0xF0) | (len & 0x0F);
+    buff[6] = (frame->can_id & 0x3F) << 2;
     buff[7] = (frame->can_id >> 6) & 0x1F;
 
-    // Internal code to make two nodes enable internal communication
-    if (frame->can_id & QEMU_CAN_RTR_FLAG) { 
-        buff[2] |= (1 << 4);
-    }
-
-    buff[2] = frame->can_dlc & 0xF;
-
-    for (i = 0; i < dlen; i++) {
+    uint8_t i;
+    for (i = 0; i < frame->can_dlc; i++) {
         buff[8 + i] = frame->data[i];
     }
+    for (; i < 64; i++) {
+        buff[8 + i] = 0;
+    }
 
-    return dlen + 8;
+    return len + 8;
 }
 
 static void buff2frame_bas(const uint8_t *buff, qemu_can_frame *frame)
 {
-    uint8_t i;
-
+    frame->can_id = ((buff[6] >> 2) & 0b111111) | ((buff[7] & 0b11111) << 6);
+    frame->can_dlc = buff[2] & 0b1111;
     frame->flags = 0;
-    frame->can_id = ((buff[6] & 0xFC) >> 2) + ((buff[7] & 0x1F) << 6);
 
-    if (buff[2] & 0x10) { 
-        frame->can_id = QEMU_CAN_RTR_FLAG;
-    }
-
-    frame->can_dlc = (buff[2] & 0xF);
-
-    frame->can_dlc=4;
-    if (frame->can_dlc > 8) {
-        frame->can_dlc = 8;
-    }
-
+    uint8_t i = 0;
     for (i = 0; i < frame->can_dlc; i++) {
         frame->data[i] = buff[8 + i];
     }
@@ -81,73 +62,68 @@ static void buff2frame_bas(const uint8_t *buff, qemu_can_frame *frame)
     }
 }
 
-/*
-#define CAN_ID    0x100 // ID del messaggio CAN
-#define CAN_RX_MB 1  // Mailbox 1 per RX
-static void flexcan_init(Object *obj) {
-
-    S32K358CanState *s = S32K358_CAN(obj);
-
-    fprintf(stderr,"Entered init CAN\n");
-    // PCC->PCCn[PCC_FlexCAN0_INDEX] |= PCC_PCCn_CGC_MASK; // Abilita clock CAN
-    s->mcr |= CAN_MCR_MDIS; // Disabilita CAN per configurazione
-    s->ctrl1 = 1 << CAN_CTRL1_PRESDIV_SHIFT | 2 << CAN_CTRL1_PROPSEG_SHIFT | 
-                      3 << CAN_CTRL1_PSEG1_SHIFT | 3 << CAN_CTRL1_PSEG2_SHIFT | 1 << CAN_CTRL1_RJW_SHIFT ;
-    s->mcr &= ~CAN_MCR_MDIS; // Riabilita CAN
-    
-    // Configura mailbox RX
-    s->rximr[CAN_RX_MB] = 0x00000000;
-    s->rxfgmask = (CAN_ID << 18);
-    s->imask1 |= (1 << CAN_RX_MB);
-    //NVIC_EnableIRQ(CAN0_ORed_IRQn);
-}
-*/
-
 static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned int size){
 
     S32K358CanState *s = opaque;
     qemu_can_frame frame;
 
-    switch (addr){
-        case CAN_MCR_OFFSET:
-            // We launch the transmission
-            
-            // The first 16 bit of val64 are the id
-            s->can_data[6] = (val64 & 0x3F) << 2; 
-            s->can_data[7] = (val64 >> 6) & 0x1F;  
-            // Other 4 bits shifted of 16 is the dlc
-            s->can_data[2] = ((val64 >> 16) & 0x0F);
-            
-
-            buff2frame_bas(s->can_data, &frame); // Save it inside the frame
-
-            s->esr1 &= ~(1 << 6);
-
-            can_bus_client_send(&s->bus_client, &frame, 1);
-
-            s->esr1 |= (1 << 6);
-
-            s->iflag1 |= (1 << 2);
-
-            s->imask1 |= (1 << 2);
-
-            // We reset the value index, used to index at which point of array we arrived with storing the data
-            s->index_can_data=0;
-
-            s32k358_update_irq(s);
+    switch(addr) {
+        case CAN_CTRL1_OFFSET:
+            s->ctrl1 = val64;
             return;
+        case IFLAG1_OFFSET:
+            s->iflag1 = val64;
+            return;
+        case IMASK1_OFFSET:
+            s->imask1 = val64;
+            return;
+        case ESR1_OFFSET:
+            s->esr1 = val64;
+            break;
+        case CAN_MCR_OFFSET:
+            s->mcr = val64;
+            break;
+        case CAN_DATA ... CAN_DATA+BUFF_SIZE:
+            uint16_t base = addr - CAN_DATA;
+            s->can_data[base] = (uint8_t)val64;
 
-        case CAN_DATA:
+            // find base address of memory buffer cell and offset
+            uint16_t offset = 0;
+            if(base < 72*7) {
+                offset = base % 72;
+            }
+            else if(base < 72*14+8) {
+                offset = (base-8) % 72;
+            }
+            else {
+                offset = (base-16) % 72;
+            }
+            base = base - offset;
 
-            // We take the value and store in the buffer (such as ID, flags, dlc and data)
-            
-            uint8_t value = val64 & 0xFF; // We take the first 8bits of the data register
-            //fprintf(stderr, "Value %d, Index:%d\n",value,s->index_can_data);
+            // If changing a code verify if it is for transmitting in channel
+            if(offset == 3) {
+                uint8_t code = s->can_data[base+offset] & 0b1111;
+                if(code == 0b1100 && !(s->mcr & (1 << 31))) {
+                    // Transmit procedure...
+                    uint8_t data[72];
+                    for(int i = base; i < base+72; i++) {
+                        data[i-base] = s->can_data[i];
+                    }
 
-            s->can_data[s->index_can_data+8]=value;
+                    buff2frame_bas(data, &frame); // Save it inside the frame
 
-            s->index_can_data=(s->index_can_data+1)%44;
+                    // If channel is busy then abort transmission
+                    if(s->esr1 & (1 << 6)){
+                        return;
+                    }
 
+                    s->esr1 |= (1 << 6);
+                    can_bus_client_send(&s->bus_client, &frame, 1);
+                    s->esr1 &= ~(1 << 6);
+
+                    s32k358_update_irq(s);
+                }
+            }
             return;
         default:
             qemu_log_mask(LOG_GUEST_ERROR,
@@ -159,35 +135,92 @@ static void flexcan_write(void *opaque, hwaddr addr, uint64_t val64, unsigned in
 static uint64_t flexcan_read(void *opaque, hwaddr addr, unsigned int size) {
 
     S32K358CanState *s = opaque;
-    uint32_t temp = 0;
+    uint64_t temp = 0;
 
     switch (addr) {
-    case CAN_DATA ... CAN_DATA+44:
-        if(s->index_limit_rx_data==0){
-            fprintf(stderr,"Error related to can_receive\n");
-            return -1;
-        }
-        temp = s->rx_can_data[s->index_rx_can_data+8];
-        s->index_rx_can_data=(s->index_rx_can_data+1)%s->index_limit_rx_data;
-        break;
-    case IFLAG1_OFFSET:
-        temp = s->iflag1;
-        break;
-    default:
-        temp = 0xff;
-        break;
+        case CAN_DATA ... CAN_DATA+BUFF_SIZE:
+            // Return value in corresponding cell...
+            uint16_t base = addr - CAN_DATA;
+            temp = s->can_data[base];
+            break;
+        case IFLAG1_OFFSET:
+            temp = s->iflag1;
+            break;
+        case IMASK1_OFFSET:
+            temp = s->imask1;
+            break;
+        case CAN_CTRL1_OFFSET:
+            temp = s->ctrl1;
+            break;
+        case ESR1_OFFSET:
+            temp = s->esr1;
+            break;
+        case CAN_MCR_OFFSET:
+            temp = s->mcr;
+            break;
+        default:
+            temp = 0xff;
+            break;
     }
     return temp;
 }
 
+// Check if there is an empty buffer
+static bool can_has_empty_buffer(S32K358CanState *s) {
+    bool ret = false;
+    uint16_t cont = 0;
+    uint8_t n = 0;
+    while(!ret && n < 21) {
+        if( ( ((s->iflag1 >> n) & 1) == 0 && (s->can_data[cont+3] & 0b1111) == 0b0100 ) ||
+            ( ((s->iflag1 >> n) & 1) == 1 && (s->can_data[cont+3] & 0b1111) == 0b1000 ) ) {
+            ret = true;
+        }
+
+        cont += 72;
+        if(cont == 72*7) {
+            cont += 8;
+        }
+        if(cont == 72*14+8) {
+            cont += 8;
+        }
+        n++;
+    }
+    return ret;
+}
+
+// Find the empty buffer
+static uint16_t can_find_empty_buffer(S32K358CanState *s) {
+    bool free = false;
+    uint16_t cont = 0;
+    uint8_t n = 0;
+    while(!free && n < 21) {
+        if( ( ((s->iflag1 >> n) & 1) == 0 && (s->can_data[cont+3] & 0b1111) == 0b0100 ) ||
+            ( ((s->iflag1 >> n) & 1) == 1 && (s->can_data[cont+3] & 0b1111) == 0b1000 ) ) {
+            free = true;
+        }
+        if(!free){
+            cont += 72;
+            if(cont == 72*7) {
+                cont += 8;
+            }
+            if(cont == 72*14+8) {
+                cont += 8;
+            }
+            n++;
+        }
+    }
+    return cont;
+}
+
 // Funzione di gestione dell'interrupt CAN (ad esempio, ricezione dei messaggi)
 bool s32k358_can_can_receive(CanBusClientState *client) {
-
     S32K358CanState *s = container_of(client, S32K358CanState, bus_client);
 
     if ((s->mcr & (1 << 31)) &&  // MDIS (bit 31)
         (s->mcr & (1 << 30)) &&  // FRZ (bit 30)
-        (s->mcr & (1 << 25)))    // SOFTRST (bit 25)
+        (s->mcr & (1 << 25)) &&  // SOFTRST (bit 25)
+        !can_has_empty_buffer(s) &&
+        (s->esr1 & (1 << 3)))
         {
         return false;
     }
@@ -196,52 +229,40 @@ bool s32k358_can_can_receive(CanBusClientState *client) {
 }
 
 // Funzione di ricezione dei messaggi CAN
-ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frames, size_t frames_cnt) {
+ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frame, size_t frames_cnt) {
     S32K358CanState *s = container_of(client, S32K358CanState, bus_client);
-    static uint8_t rcv[BUFF_SIZE];
-    int i;
-    int ret = -1;
-    const qemu_can_frame *frame = frames;
-    s->index_limit_rx_data=0;
-    s->index_rx_can_data=0;
+    static uint8_t data[72];
 
-    // We check the number of frames received
-    if (frames_cnt <= 0) {
-        return 0;
+    if(!can_has_empty_buffer(s)) {
+        return -1;
     }
+    uint16_t base = can_find_empty_buffer(s);
 
-    // We set register to reception of message
     s->esr1 |= (1 << 3);
 
-    ret = frame2buff_bas(frame, rcv);
-    s->index_limit_rx_data=ret-8; // I want the limit index of only data byte.
-
+    int ret = frame2buff_bas(frame, data);
     if (ret < 0) {
         s->esr1 &= ~(1 << 3);
         return ret;
     }
-
-    if (ret> BUFF_SIZE){
-
-        //s->status_bas |= (1 << 1); /* Overrun status */
+    if (ret > 72){
         s->esr1 &= ~(1 << 3);
-        //s->interrupt_bas |= (1 << 3);
-
         s32k358_update_irq(s);
 
         return ret;
-
     }
 
-    for (i = 0; i < ret; i++) {
-        s->rx_can_data[i % BUFF_SIZE] = rcv[i];
+    for(int i = base; i < base+72; i++) {
+        s->can_data[i] = data[i-base];
     }
-    //s->rx_ptr %= BUFF_SIZE; /* update the pointer. */
-
-    //s->status_bas |= 0x01; /* Set the Receive Buffer Status. DS-p15 */
-    //s->interrupt_bas |= (1 << 0);
     s->esr1 &= ~(1 << 3);
+
+    s->can_data[base+3] = (s->can_data[base+3] & 0xF0) | (0b0010 & 0x0F);
+    s->iflag1 |= (1 << (base/72));
+    s->imask1 |= (1 << (base/72));
+
     s32k358_update_irq(s);
+
     return 1;
 }
 
@@ -274,7 +295,6 @@ static int can_connect_to_bus(S32K358CanState *s, CanBusState *bus)
 // Initialitation of CAN device
 static void s32k358_can_init(Object *obj) {
     S32K358CanState *s = S32K358_CAN(obj);
-
     
     object_property_add_link(obj, "canbus", TYPE_CAN_BUS,
                              (Object **)&s->canbus,
@@ -322,8 +342,20 @@ static void s32k358_can_reset(DeviceState *dev)
     s->erfier     = 0x00000000;
     s->erfsr      = 0x00000000;    
 
-    s->index_can_data=0;
-    s->index_rx_can_data=0;
+    uint16_t cont = 0;
+    uint8_t n = 0;
+    while(n < 21) {
+        s->can_data[cont+3] = 0x04;
+
+        cont += 72;
+        if(cont == 72*7) {
+            cont += 8;
+        }
+        if(cont == 72*14+8) {
+            cont += 8;
+        }
+        n++;
+    }
 
     s32k358_update_irq(s);
 }

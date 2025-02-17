@@ -3,38 +3,54 @@
 #include <stdio.h>
 
 int main(void){
-    int data = 0;
-    char msg[25];
+    char msg[30];
     UART_init();
+    CAN_init();
 
 	UART_printf("UART Test\n");
 
-	frame_t frame_to_send;
-    frame_to_send.ID=1234;
-    frame_to_send.payload[0]=10;
-    frame_to_send.payload[1]=12;
-    frame_to_send.payload[2]=14;
-    frame_to_send.payload[3]=16;
-    frame_to_send.can_dlc=4;
+	frame_t frame;
+    frame.can_id=1234;
+    frame.data[0]=10;
+    frame.data[1]=12;
+    frame.data[2]=14;
+    frame.data[3]=16;
+    frame.can_dlc=4;
 
-    CAN_printf(&frame_to_send);
+    UART_printf("Writing to CAN...\n");
+    CAN_write(&frame);
 
-    data = CAN_read();
-    snprintf(msg, sizeof(msg), "Received from CAN: %d\n", data);
+    frame.can_id=1235;
+    frame.data[0]=10;
+    frame.data[1]=12;
+    frame.data[2]=14;
+    frame.data[3]=16;
+    frame.can_dlc=4;
+
+    CAN_write(&frame);
+
+    frame_t frame2;
+    CAN_read(&frame2);
+
+    snprintf(msg, sizeof(msg), "Received ID from CAN: %u\n", frame2.can_id);
     UART_printf(msg);
-
-    data = CAN_read();
-    snprintf(msg, sizeof(msg), "Received from CAN: %d\n", data);
+    snprintf(msg, sizeof(msg), "Received DLC from CAN: %u\n", frame2.can_dlc);
     UART_printf(msg);
+    for(int i = 0; i < frame2.can_dlc; i++){
+        snprintf(msg, sizeof(msg), "Received from CAN: %u\n", frame2.data[i]);
+        UART_printf(msg);
+    }
 
-    data = CAN_read();
-    snprintf(msg, sizeof(msg), "Received from CAN: %d\n", data);
-    UART_printf(msg);
+    CAN_read(&frame2);
 
-    data = CAN_read();
-    snprintf(msg, sizeof(msg), "Received from CAN: %d\n", data);
+    snprintf(msg, sizeof(msg), "Received ID from CAN: %u\n", frame2.can_id);
     UART_printf(msg);
+    snprintf(msg, sizeof(msg), "Received DLC from CAN: %u\n", frame2.can_dlc);
+    UART_printf(msg);
+    for(int i = 0; i < frame2.can_dlc; i++){
+        snprintf(msg, sizeof(msg), "Received from CAN: %u\n", frame2.data[i]);
+        UART_printf(msg);
+    }
 
 	return 0;
 }
-

@@ -16,7 +16,7 @@
 #include "net/can_emu.h"
 
 #define TYPE_S32K358_CAN "s32k358-can"
-#define BUFF_SIZE 72
+#define BUFF_SIZE 72*21+16-128
 
 #define S32K358_CAN(obj) \
     OBJECT_CHECK(S32K358CanState, (obj), TYPE_S32K358_CAN)
@@ -28,11 +28,7 @@ typedef struct {
     /* <public> */
     MemoryRegion mmio;
 
-    uint8_t can_data[BUFF_SIZE];          // Data register
-    uint8_t index_can_data;
-    uint8_t rx_can_data[BUFF_SIZE];
-    uint8_t index_rx_can_data;
-    uint8_t index_limit_rx_data;
+    uint8_t can_data[BUFF_SIZE];
 
     uint32_t mcr;         // MCR Register Offset  
     uint32_t ctrl1;       // CTRL1 Register Offset  
@@ -87,6 +83,6 @@ typedef struct {
 } S32K358CanState;
 
 bool s32k358_can_can_receive(CanBusClientState *client);
-ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frames, size_t frames_cnt);
+ssize_t s32k358_can_receive(CanBusClientState *client, const qemu_can_frame *frame, size_t frames_cnt);
 
 #endif /* HW_S32K358_CAN_H */

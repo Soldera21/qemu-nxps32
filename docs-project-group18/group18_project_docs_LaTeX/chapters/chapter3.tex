@@ -27,7 +27,7 @@ To support the S32K3X8EVB board, the following changes were made to the QEMU cod
     \item \textbf{CAN}: A new driver for the FlexCAN controller was implemented in the \texttt{hw/net/can/} directory, supporting FlexCAN communication in compliance with automotive standards.
     \item \textbf{Kconfig}: The \texttt{Kconfig} file in the modified directories was updated to include new configuration entries for the board, SoC, and peripherals.
     \item \textbf{Meson.build}: The \texttt{meson.build} file in the modified directories was modified to include the new files in the build process, ensuring they are compiled correctly.
-    \item \textbf{New device compilation}: The file \texttt{/configs/devices/arm-softmmu/default.mak} has been edited to enable build only of the new ARM board to simplify the process.
+    \item \textbf{New device compilation}: The file \texttt{configs/devices/arm-softmmu/default.mak} has been edited to enable build only of the new ARM board to simplify the process.
 \end{itemize}
 
 
@@ -46,14 +46,22 @@ The entire memory of the SoC has been emulated, allowing the firmware to interac
 The UART peripheral has been added in the emulation environment. It is an asynchronous serial communication interface that allows data transmission and reception between devices.\\
 In particular the following registers have been implemented:
 \begin{itemize}
-    \item 
+    \item DATA: holds transmitted/received data and supports multiple length data. In our specific case we are using 8-bit data;
+    \item CTRL: configures UART settings (enable, parity, stop bits, interrupts);
+    \item STAT: reports UART status (transmit ready, receive full, errors);
+    \item BAUD: sets the baud rate for the communication through that UART;
 \end{itemize}
 
 \paragraph{CAN}
 CAN communication has been integrated in emulated board. The CAN peripheral is a robust, real-time communication protocol widely used in automotive applications for connecting devices and sensors. In the emulation, FlexCAN support allows simulation of the management of CAN buses and the transmission of data frames.\\
 In particular the following registers have been implemented:
 \begin{itemize}
-    \item 
+    \item DATA: contains memory buffers from frames received or waiting to be transmitted. The number of frames depends on the chosen dimension. In our implementation we are using a fixed frame length od 64 bytes allowing for 21 frames to be in memory buffers;
+    \item MCR: defines the global system configuration. For example during initialization of the CAN module we set some specific bits to enable it;
+    \item IMASK1: signals interrupt available for CPU to manage message buffers for 0 to 31;
+    \item IFLAG1: signals successful operations in message buffers for 0 to 31;
+    \item ESR1: contains errors conditions and status of the module. It is the source of some interrupts for the CPU. For example we set some bits in this register to mark the transmission or recption status;
+    \item CTRL1: contains some specific control features for the CAN bus.
 \end{itemize}
 
 

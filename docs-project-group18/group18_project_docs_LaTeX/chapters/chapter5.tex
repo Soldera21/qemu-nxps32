@@ -5,8 +5,8 @@ To ensure the correct operation of the emulated system, we developed multiple ap
 \subsection{Test Peripheral Initialization}
 
 \begin{itemize}
-    \item \textbf{UART:} Configuration of a UART peripheral for data transmission and reception.
-    \item \textbf{CAN:} Configuration of a CAN peripheral, with two clients attempting to connect to the CAN bus to simulate communication between devices.
+    \item \textbf{UART:} Configuration of a UART peripheral for data transmission and reception. It is done setting baud rate in the baud register and enabling bit for transmission and reception in control register. Since we are able to receive and transmit after this, the procedure is correct.
+    \item \textbf{CAN:} Configuration of a CAN peripheral to interact with a predefined bus in QEMU. The bits to enable the interface and to disable freezing are set. We can now transmit on the bus to verify the correct configuration.
 \end{itemize}
 
 
@@ -14,17 +14,13 @@ To ensure the correct operation of the emulated system, we developed multiple ap
 
 \paragraph{UART Test}
 
-\begin{itemize}
-    \item Data transmission and reception via UART were implemented to verify that data is correctly exchanged between the microcontroller and an external device.
-    \item Transmission errors were emulated by altering control bits, such as simulating a parity error, to verify the correct error handling mechanism.
-\end{itemize}
+Data transmission and reception via UART were implemented to verify that data is correctly exchanged between the microcontroller and an external device. In particular a function to write in UART and another one to write in it were implemented and are available in the test programs. Transmission is done copying data from a string until the \texttt{null} character is sent. For reception we check the status register if a new character is available for reading until a \texttt{null}, \texttt{\symbol{92}n} or \texttt{\symbol{92}r} character is received.
+%    \item Transmission errors were emulated by altering control bits, such as simulating a parity error, to verify the correct error handling mechanism.
 
 \paragraph{CAN Test}
 
-\begin{itemize}
-    \item Data transmission and reception on the CAN bus were implemented, with two clients attempting to interact with the bus to simulate real traffic.
-    \item CAN transmission errors were emulated, such as packet loss or data corruption, by modifying control bits.
-\end{itemize}
+Data transmission and reception on the CAN bus were implemented. In the library to test the functionalities we made a function to check if there are free slots in the buffer to prepare a new frame for transmission. Then there is another function to check if any buffer can be read and a couple of functions to convert from frame structure to byte buffer and vice-versa. Functions for CAN read and write interact directly with data registers checking where to read or write and copying byte by byte in memory. These functions change flags to trigger transmission or to mark a buffer as free to enable overwriting.
+%    \item CAN transmission errors were emulated, such as packet loss or data corruption, by modifying control bits.
 
 
 \subsection{FreeRTOS Functionality Verification}

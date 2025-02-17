@@ -66,6 +66,8 @@ The demos that are included in this project are:
 * **TestUART**: compilation of demo code for UART input and output with ad-hoc Makefile and with all the needed libraries included;
 * **TestUART_S32K358_IDE**: compilation of demo code for UART through the NXP IDE.
 
+Every demo program can be run entering the corresponding folder and usign the command ```make run```.
+
 To achieve correct compilation of the code also ```meson.build``` and ```Kconfig``` have been properly modified in the folders where new files have been added.
 
 

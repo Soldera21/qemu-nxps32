@@ -55,9 +55,8 @@ static void s32k358_uart_receive(void *opaque, const uint8_t *buf, int size)
 {
     S32K358UartState *s = opaque;
 
-    //fprintf(stderr, "Called uart receive\n");
     if (!(s->uart_ctrl & UART_CTRL_TE && s->uart_ctrl & UART_CTRL_RE)) {
-        fprintf(stderr, "Drop chars\n");
+        fprintf(stderr, "UART Disabled\n");
         return;
     }
 
@@ -128,7 +127,7 @@ static uint64_t s32k358_uart_read(void *opaque, hwaddr addr,
     case UART_DATA:
         DB_PRINT("Value: 0x%" PRIx32 ", %c\n", s->uart_data, (char) s->uart_data);
         retvalue = s->uart_data & 0x3FF;
-        s->uart_data &= ~UART_STAT_RDRF;
+        s->uart_stat &= ~UART_STAT_RDRF;
         qemu_chr_fe_accept_input(&s->chr);
         s32k358_update_irq(s);
         return retvalue;
@@ -154,19 +153,19 @@ static void s32k358_uart_write(void *opaque, hwaddr addr,
 
     switch (addr) {
     case UART_STAT:
-        s->uart_stat = value;
+        s->uart_stat = val64;
         return;
     case UART_DATA:
-        //parity= value & (1 << 14);
+        //parity = value & (1 << 14);
         ch = value & 0xFF; // We take the first 8bits of the data register
         qemu_chr_fe_write_all(&s->chr, &ch, 1);
         s->uart_stat |= UART_STAT_TC;
         return;
     case UART_BAUD:
-        s->uart_baud = value;
+        s->uart_baud = val64;
         return;
     case UART_CTRL:
-        s->uart_ctrl |= value;
+        s->uart_ctrl = val64;
         return;
     default:
         qemu_log_mask(LOG_GUEST_ERROR,

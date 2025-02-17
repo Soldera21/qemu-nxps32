@@ -1,19 +1,10 @@
 #include "uart.h"
 
-void UART_init(void) {
-    /* SET BAUD RATE */
+void UART_init( void ) {
     UART0_BAUDDIV = 16;
-
-    /* ENABLE UART TRANSMITTER */
-    UART0_CTRL |= (1 << 19);
-
-    /* ENABLE UART RECEIVER */
     UART0_CTRL |= (1 << 18);
-
-    /* EXAMPLE TO ENABLE PARITY */
-    UART0_CTRL |= (1 << 1);
+    UART0_CTRL |= (1 << 19);
 }
-
 
 void UART_printf(const char *s) {
     while(*s != '\0') {
@@ -22,5 +13,14 @@ void UART_printf(const char *s) {
     }
 }
 
-// Simulate parity error (16th bit of status register) for FreeRTOS simulation
-// Simulate also parity error in data register (14th bit)
+void UART_scanf(char *s) {
+    do {
+        while(!(UART0_STATE & (1 << 21)));
+        *s = (unsigned int)UART0_DATA;
+        char msg[2];
+        snprintf(msg, sizeof(msg), "%c", *s);
+        UART_printf(msg);
+        s++;
+    } while(*(s-1) != '\0' && *(s-1) != '\n' && *(s-1) != '\r');
+    *(s-1) = '\0';
+}

@@ -61,9 +61,9 @@ The official documentation of Qemu is in ```docs``` folder; in ```docs-project-g
 
 The demos that are included in this project are:
 * **TestCAN**: compilation of demo code for CAN single task with ad-hoc Makefile and with all the needed libraries included;
-* **TestCAN_MultiTask_S32K358_IDE**: compilation of demo code for CAN in multi task environment like FreeRTOS through the NXP IDE.
-* **TestFreeRTOS_S32K358_IDE**: compilation of demo code of FreeRTOS with two tasks and a semaphore through the NXP IDE.
-* **TestUART**: compilation of demo code for UART with ad-hoc Makefile and with all the needed libraries included;
+* **TestCAN_MultiTask_S32K358_IDE**: compilation through the NXP IDE of demo code for CAN in FreeRTOS with two tasks exchanging frames;
+* **TestFreeRTOS_S32K358_IDE**: compilation of demo code of FreeRTOS with two tasks and a semaphore through the NXP IDE;
+* **TestUART**: compilation of demo code for UART input and output with ad-hoc Makefile and with all the needed libraries included;
 * **TestUART_S32K358_IDE**: compilation of demo code for UART through the NXP IDE.
 
 To achieve correct compilation of the code also ```meson.build``` and ```Kconfig``` have been properly modified in the folders where new files have been added.

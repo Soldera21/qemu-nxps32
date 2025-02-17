@@ -49,4 +49,6 @@ debug:
 
 run:
 	qemu-system-nxps32 -machine nxps32 -cpu cortex-m7 -kernel $(TARGET) -monitor none -nographic -serial stdio
+# adding: "-serial pty -serial pty" serial 1 and 2 can be linked to test also interserial communication
+# i.e. with socat: "socat /dev/pts/2,raw,echo=0 /dev/pts/3,raw,echo=0"
 
